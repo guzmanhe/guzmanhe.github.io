@@ -1,1 +1,94 @@
-Hello World
+
+---
+layout: default
+title: Adam Lopez
+picture: nike
+news:
+  -
+    >
+      In 2015 I attended a <a href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=15122">
+      Dagstuhl seminar on Formal Models of Graph Transformation in Natural Language Processing</a>.
+      Stay tuned for more!
+  -
+    >
+      Prospective Ph.D. students should <a href="http://www.ilcc.inf.ed.ac.uk/study">apply to study in the ILCC</a>. 
+      Search for my name <a href="http://www.ilcc.inf.ed.ac.uk/study/possible-phd-topics-in-ilcc">here</a>
+      for a (non-exhaustive) list of possible thesis topics. If you are interested in the machine
+      learning aspects of natural language processing you can also apply to the 
+      <a href="http://datascience.inf.ed.ac.uk/">CDT in Data Science</a>, and
+      if you are interested in working with me on GPGPU algorithms, you can  apply 
+      to the <a href="http://pervasiveparallelism.inf.ed.ac.uk/">CDT in Pervasive Parallelism</a>.
+      I am affiliated with both centers.
+  -
+    >
+      The LDC released <a href="https://catalog.ldc.upenn.edu/LDC2014T23">a four-way parallel corpus</a> 
+      of speech, transcriptions, translation, and ASR lattices that I developed with colleagues at 
+      Johns Hopkins University.
+  -
+    >
+      I worked with an excellent team of researchers led by <a href="http://verbs.colorado.edu/~mpalmer/">Martha Palmer</a> on 
+      <a href="http://www.clsp.jhu.edu/workshops/archive/ws14-summer-workshop/groups/amr-mt/">Cross-lingual abstract meaning representations for machine translation</a> at the <a href="http://www.clsp.jhu.edu/workshops/archive/ws14-summer-workshop/">2014 Fred Jelinek memorial CLSP workshop</a> in Prague.
+      The team produced many interesting results. <a href="http://lectures.ms.mff.cuni.cz/view.php?rec=231">Here is a video</a> of our presentation
+      from the final day of the workshop. I am the first speaker, and my students Naomi and Adi also give presentations. Stay tuned for more!
+  - >
+      I was awarded an
+      <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1349902">NSF grant</a>
+      for a project on formal language theory and translation.
+---
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Adam Lopez</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <address>
+        Reader<br/>
+        <a href="http://www.ilcc.inf.ed.ac.uk/">Institute for Language, Cognition and Computation</a><br/>
+        <a href="http://www.ed.ac.uk/schools-departments/informatics/">School of Informatics</a><br/>
+        <a href="http://www.ed.ac.uk/home">University of Edinburgh</a><br/>
+      </address>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:alopez@inf.ed.ac.uk"><span class="glyphicon glyphicon-envelope"></span></a> Email<br/>
+      <a href="tel:+44-1316504430"><span class="glyphicon glyphicon-phone"></span>+44 131 650 4430</a><br/>
+      <a href="http://scholar.google.com/citations?user=u4sxKZwAAAAJ">
+        <img src="img/ico/gs.png" alt=""/>
+      </a> Google Scholar<br/>
+      <a href="http://github.com/alopez">
+        <img src="img/ico/github_icon.png" alt=""/>
+      </a> Github
+    </div>
+  </div>
+</div>
+
+<p>
+  The biggest barrier to global communication is the fact that we speak many 
+  different languages. My research focuses on technology that will break this 
+  barrier, in particular systems that learn to translate from big data (like 
+  <a href="http://translate.google.com">Google Translate</a>,
+  <a href="http://www.bing.com/translator">Bing Translator</a>, and
+  <a href="http://www.freetranslation.com/">SDL Free Translation</a>), and
+  their integration with speech and search technologies. 
+  Improvements to these systems depend on extensions and applications of 
+  machine learning, formal language theory, linguistics, and
+  algorithms. I am interested in many problems in these fields.
+</p>
+
+<h4>News</h4>
+<ul>
+{% for item in page.news %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+<h4>Selected Papers</h4>
+{% for post in site.papers %}
+  {% if post.selected %}
+    {% include paper.html paper=post %}
+  {% endif %}
+{% endfor %}
+
+
+>>>>>>> 204ef2416f61b828d9d7e7ee3d6cc8168b96daa5
