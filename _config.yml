@@ -20,7 +20,7 @@ papers:
     venue: workshop
     code: https://github.com/nsaphra/AMRICA
   - layout: paper
-    selected: y
+    selected: no
     paper-type: article 
     year: 2015
     img: hiero-gpu
