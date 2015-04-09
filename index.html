@@ -75,7 +75,9 @@ news:
 </ul>
 
 <h4>Selected Papers</h4>
-{% for post in site.papers %}
+
+{%assign papers= site.papers | sort: "year" | reverse  %}
+{% for post in papers %}
   {% if post.selected %}
     {% include paper.html paper=post %}
   {% endif %}
