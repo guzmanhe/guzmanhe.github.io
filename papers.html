@@ -9,26 +9,34 @@ picture: paco
 </div> -->
 
 <h4>Papers</h4>
-{% for post in site.papers %}
-  {% include paper.html paper=post %}
-{% endfor %}
 
+
+ {%assign  years = site.papers | group_by :"year" | sort: "title" | reverse %}
+ {% for year in years %}
+  <h5> {{year.name}}</h5>
+ {% for post in year.items %}
+      {% include paper.html paper=post %}
+  {% endfor %}
+{% endfor %}
 <h4>Talks</h4>
 
+{% assign years= site.talks | group_by: "year"| sort: "name"| reverse %}
+{%for year in years %}
 
-{% for talk in site.talks %}
+{% for talk in year.items %}
 <div class="media">
   <a class="pull-left thumbnail" {%if talk.url %} href="{{ talk.url }}" {% endif %}>
-    <img class="media-object" src="img/talk/{{ talk.img }}" alt="">
+    <img class="media-object" src="img/talk/{{ talk.img }}.jpg" alt="">
   </a>
   <div class="media-body">
     <strong>{{ talk.title }}</strong><br/>
-    {{ talk.detail }}
+    {{ talk.detail }}.{{ talk.year }}
     {% if talk.video %}<br/>
       <a href="{{ talk.video }}"><span class="glyphicon glyphicon-film"></span></a> Video
     {% endif %}
   </div>
 </div>
+{% endfor %}
 {% endfor %}
 
 

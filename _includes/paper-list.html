@@ -1,23 +1,28 @@
 <h5>{{ include.heading }}</h5>
 <ul>
-  {% for paper in site.papers %}
+  {%assign papers= site.papers | sort: "year" | reverse  %}
+  {% for paper in papers %}
     {% if paper.venue == include.venue %}
       <li>
       {% if paper.authors %}
-        {{ paper.authors | replace: 'With', 'Adam Lopez,' }}. 
+        {{ paper.authors | replace: 'Francisco Guzmán', '<b>Francisco Guzmán</b>' }}. 
       {% else %}
-        Adam Lopez.
+        Francisco Guzman.
       {% endif %}
       {{ paper.year }}. 
       {{ paper.title }}. 
       In
       {% case paper.paper-type %}
         {% when "inproceedings" %}
-          <i>{{ paper.booktitle }}</i>.
+          <i>{{ paper.booktitle }}.</i>
+        {% when "incollection" %}
+          <i>{{ paper.booktitle}}.</i> {{paper.editor}} (Eds). {{paper.publisher}}.
         {% when "article" %}
-            <i>{{ paper.journal }}</i>,
+            <i>{{ paper.journal }},</i>
             {% if paper.volume %}{{ paper.volume }}{% if paper.number %}({{ paper.number }}){% endif %}.{% endif %}
             {% if paper.article%}Article {{ paper.article}}.{% endif %}
+        {% when "techreport" %}
+            <i>{{ paper.journal }}.</i>
       {% endcase %}
       </li>
     {% endif %}

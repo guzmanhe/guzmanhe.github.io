@@ -1,9 +1,11 @@
-<div class="media">
+<div class="media" {% if include.paper.selected %} style="background-color: #E1E0DD" {% endif %}>
   <a class="pull-left thumbnail" {% if include.paper.doc-url %} href="{{ include.paper.doc-url }}" {% endif %}>
+    {% if include.paper.img %}
     <img src="img/paper/{{ include.paper.img }}.jpg" alt=""/>
+    {% endif %}
   </a>
-  <div class="media-body">
-    <strong>{{ include.paper.title }}</strong><br/>
+  <div class="media-body"  >
+    {% if include.paper.selected %}<span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% endif %}  <strong>{{ include.paper.title }}</strong><br/>
     {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}  
     {% case include.paper.paper-type %}
       {% when "inproceedings" %}
@@ -15,6 +17,17 @@
         {% endif %}
           <i>{{ include.paper.booktitle }}</i>,
         {% if include.paper.pages %}pages {{ include.paper.pages }},{% endif %}
+      {% when "incollection" %}
+        In
+        {% if include.paper.booktitle-url %}
+          <a href="{{ include.paper.booktitle-url }}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{ include.paper.booktitle}}</i>,
+        {% if include.paper.pages %}pages {{ include.paper.pages }}.{% endif %}
+        {% if include.paper.editor %} {{include.paper.editor}} (Eds). {% endif %}
+        {% if include.paper.publisher %} {{include.paper.publisher}}. {% endif %}
       {% when "article" %}
         In
         {% if include.paper.journal-url %}
@@ -41,6 +54,24 @@
             </div>
             <div class="modal-body">
               {{ include.paper.abstract }}
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+    {% endif %}
+    {% if include.paper.bibtex %}
+      <a data-toggle="modal" href="#bibtex{{ include.paper.img }}" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtex{{ include.paper.img }}" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">{{ include.paper.title }}</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                {{ include.paper.bibtex }}
+              </code>
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->

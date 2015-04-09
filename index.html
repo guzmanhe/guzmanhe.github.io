@@ -1,1 +1,84 @@
-Coming soon
+---
+layout: default
+title: Paco Guzman
+picture: paco
+
+news:
+  -
+    date: 2-Apr-2015
+    text: >
+      We are receiving applications for our summer internship program. <i> Building a Word Emotion Detector: Are you a pokerface? </i>. <b> Deadline to apply:</b>11 Apr 2015. See our <a href="media/pokerface.pdf">flyer</a>. Apply at <a href="http://bit.ly/1sbrsJl" > QCRI Summer Internship page </a>.
+  - 
+    date: 26-Mar-2015
+    text: > 
+      I'm going to the <a href="http://www.statmt.org/mtma15/"> Machine Translation Marathon in the Americas </a> in Urbana, IL, USA. I'll be giving a talk about Machine Translation Evaluation.
+  -
+    date: 23-Mar-2015
+    text: >
+      I was at the  <a href="http://www.tii.qa/conference-landing" >  Sixth Annual International Translation Conference</a> giving a talk with Stephan Vogel on <i> Machine Translation: A Game Changer for the Translation Professionals? </i>.  <a href="media/TII-TransTech-2015-v4.pptx.gz" >Slides </a>
+      
+  -
+    date: 16-Mar-2015
+    text: >
+      The preliminary results for  <a href="https://openmteval.nist.gov/" > NIST OpenMT Eval 2015 </a> are in! Our system for Egyptian-English translation got the 2nd Place.      
+  -
+    date: 24-Jan-2015
+    text: >
+      I was a judge at the <a href="http://www.carnegieapps.com/"> 2015 CMU-Qatar Carnegie Apps Hackathon</a>. This is the <a href="http://www.qatar.cmu.edu/news/view/1398"/>news article</a>.
+  
+  - date: 16-Dec-2014
+    text: >
+      Our QCRI team won the "best in show" award at the <a href="http://newshack.co.uk/newshack-iii-language-tech/"> BBC Labs NewsHack II - LangTech </a>. See more <a href="https://twitter.com/basilesimon/status/544912592977014784/photo/1"/> here </a> and <a href="http://qcri.org.qa/resources/in-the-media/590?page=2&backArt=18"/> here </a>.
+  - date: 5-Dec-2014
+    text: > 
+      I will be volunteering at Reach Out to Asia volunteering trip to Cambodia. I'll be working as an IT instructor for teachers at the ROTA School.
+     
+---
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Francisco (Paco) Guzmán</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <address>
+        Scientist<br/>
+        <a href="http://qcri.com/our-research/arabic-language-technologies/arabic-language-technologies/">Arabic Language Technologies</a><br/>
+        <a href="http://qcri.com/">Qatar Computing Research Institute</a><br/>
+        <a href="http://qf.org.qa">Qatar Foundation</a><br/>
+      </address>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:fguzman@qf.org.qa"><span class="glyphicon glyphicon-envelope"></span></a> Email<br/>
+      <!--<a href="tel:+44-1316504430"><span class="glyphicon glyphicon-phone"></span>+44 131 650 4430</a><br/>-->
+      <a href="http://scholar.google.com/citations?user=eEBT0BAAAAAJ">
+        <img src="img/ico/gs.png" alt=""/>
+      </a> Google Scholar<br/>
+      <a href="http://github.com/guzmanhe">
+        <img src="img/ico/github_icon.png" alt=""/>
+      </a> Github
+    </div>
+  </div>
+</div>
+
+<blockquote>
+  <p>
+ I am a Scientist working at the Arabic Language Technologies group at QCRI. I have been working in different sub-disciplines of Machine Translation since 2006.  My interests lie at the intersection of Language Technologies, Statistics and Machine Learning. I love learning new languages.</p>
+</blockquote>
+
+<h4>News</h4>
+<ul class="list-group">
+{% for item in page.news %}
+   <li class="list-group-item"><span class="badge" >{{item.date | date: "%-d %b %y"}}</span>{{ item.text }}</li>
+{% endfor %}
+</ul>
+
+<h4>Selected Papers</h4>
+{% for post in site.papers %}
+  {% if post.selected %}
+    {% include paper.html paper=post %}
+  {% endif %}
+{% endfor %}
+
+

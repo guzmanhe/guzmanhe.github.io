@@ -1,55 +1,591 @@
 exclude: ['README.md']
 timezone: US/Eastern
-talks:
-  -
-    title: Compact Adaptable Translation Models on GPUs
-    detail: Talk at Google, 2013.
-    url: "http://www.cs.jhu.edu/~alopez/talks/gpus-oct2013-google.pdf"
-    img: "google-talk.jpg"
+talks: 
+    -   
+        layout: talk
+        year: 2009
+        detail: Introductory talk to SMT (Spanish). Tecnológico de Orizaba
+        title: Método para la Traducción Automática Estadística
+        url: media/TOrizaba-2009.pdf
+        img: TOrizaba-2009
+    -  
+        layout: talk
+        year: 2015
+        detail: Introduction to SMT and post-editing for professional translators. With Stephan Vogel. Sixth Annual International Translation Conference (TII)
+        title: >
+            Machine Translation: A Game Changer for the Translation Professionals?
+        url: media/TII-TransTech-2015-v4.pptx
+        img: TII-TransTech-2015
+
+        
+
 
 papers:
-  - layout: paper
-    paper-type: inproceedings
-    selected: no
-    year: 2015
-    img: inpress
-    title: AMRICA&#58; an AMR Inspector for Cross-language Alignments
-    authors: Naomi Saphra and Adam Lopez
-    booktitle: NAACL-HLT Demonstrations
-    booktitle-url: http://naacl.org/naacl-hlt-2015/
-    venue: workshop
-    code: https://github.com/nsaphra/AMRICA
-  - layout: paper
-    selected: no
-    paper-type: article 
-    year: 2015
-    img: hiero-gpu
-    title: Gappy pattern matching on GPUs for on-demand extraction of hierarchical translation grammars
-    doc-url: http://aclweb.org/anthology/Q/Q15/Q15-1007.pdf
-    authors: Hua He, Jimmy Lin, and Adam Lopez
-    journal: Transactions of the ACL
-    journal-url: https://tacl2013.cs.columbia.edu/ojs/index.php/tacl
-    code: http://hohocode.github.io/cgx/
-    volume: 3
-    venue: conference
-    abstract: >
-      Grammars for machine translation can
-      be materialized on demand by finding source phrases in an
-      indexed parallel corpus and extracting their translations.
-      This approach is limited in practical applications
-      by the computational expense of online lookup and extraction.
-      For <em>phrase-based</em> models, recent work has shown that on-demand grammar extraction
-      can be greatly accelerated by parallelization on general purpose graphics processing
-      units (GPUs), but these algorithms do not
-      work for <em>hierarchical</em>, which require matching patterns that contain gaps.
-      We address this limitation by presenting a novel
-      GPU algorithm for on-demand hierarchical grammar
-      extraction that is at least an order of magnitude faster than
-      a comparable CPU algorithm when processing large batches of sentences.
-      In terms of end-to-end translation, with decoding on the CPU, we increase
-      throughput by roughly two thirds on a standard MT evaluation dataset.
-      The GPU necessary to achieve these improvements increases the cost of a server by about a third.
-      We believe that GPU-based extraction of hierarchical grammars
-      is an attractive proposition, particularly for MT applications
-      that demand high throughput.
 
+
+    -   
+        layout: paper
+        paper-type: inproceedings
+        selected: no 
+        year: 2005
+        img: SMC2005-Guzman
+        doc-url: papers/SMC2005-Guzman.pdf
+        slides: media/SMC2005-Guzman.ppt
+        title: > 
+            Towards Traffic Light Control Through a Cooperative Multiagent System: A Simulation-Based Study
+        booktitle: Proceedings of the 2005 Agent-Directed Simulation Symposium (ADS05) at the 2005 Spring Simulation Multiconference (SpringSim'05)
+        venue: conference
+        pages: 29-35
+        authors: Francisco Guzmán, and Leonardo Garrido
+        abstract: >
+            Present day traffic networks are unable to efficiently handle the daily car traffic through urban areas. We think that multiagent systems are an excellent way of doing microscopic simulation and thus provide possible solutions to the traffic control problem. In this paper, we present our simulation-based study to simulate traffic networks and optimize them via a multiagent cooperative system for traffic light control. This system simulates the traffic on an intersection, minimizing the time that each car has to wait in order to be served. Light agents can communicate each other in order to negotiate and share their light times. Our experimental results have shown how our approach can decrease the average car delay while the spawn probability is increased varying the service time and the number of traffic lights sets at a specific intersection. These results show important improvements using our multiagent light control system.
+        bibtex: > 
+            @inproceedings{guzman:2005:towards,
+              Author = {Guzm{\'a}n, Francisco and Garrido, Leonardo},
+              Booktitle = {Proceedings of the 2005 Agent--Directed Simulation Symposium ({ADS05}) at the 2005 Spring Simulation Multiconference ({SpringSim'05})},
+              Pages = {29--35},
+              Title = {Towards Traffic Light Control Through a Cooperative Multiagent System: A Simulation--Based Study},
+              address = { San Diego, California, USA},
+              month = { April},
+              Year = {2005},
+              Abstract = {Present day traffic networks are unable to efficiently handle the daily car traffic through urban areas. We think that multiagent systems are an excellent way of doing microscopic simulation and thus provide possible solutions to the traffic control problem. In this paper, we present our simulation-based study to simulate traffic networks and optimize them via a multiagent cooperative system for traffic light control. This system simulates the traffic on an intersection, minimizing the time that each car has to wait in order to be served. Light agents can communicate each other in order to negotiate and share their light times. Our experimental results have shown how our approach can decrease the average car delay while the spawn probability is increased varying the service time and the number of traffic lights sets at a specific intersection. These results show important improvements using our multiagent light control system.}}
+
+    -   
+        layout: paper
+        paper-type: techreport
+        selected: no
+        year: 2005
+        title: Multiagent-Based Traffic Simulation
+        authors: Francisco Guzmán, and Leonardo Garrido
+        booktitle: Technical Report CSI-RI-005
+        journal: Technical Report CSI-RI-005
+        img: techreport
+        venue: techreport
+        bibtex: > 
+            @techreport{guzman:2005:multiagent,
+            Author = {Guzm{\'a}n, Francisco and Garrido, Leonardo},
+            Institution = {Tecnol{\'o}gico de Monterrey ({ITESM}), Monterrey, NL, M{\'e}xico},
+            Title = {Multiagent--Based Traffic Simulation},
+            Journal = {Technical Report CSI-RI-005},
+            address = { Monterrey, Mexico},
+            Year = {2005}}
+
+
+
+    -   
+        layout: paper
+        paper-type: inproceedings
+        selected: no
+        year: 2007
+        title: >
+            Using Translation Paraphrases from Trilingual Corpora to Improve Phrase-Based Statistical Machine Translation: A Preliminary Report 
+        booktitle: Sixth Mexican International Conference on Artificial Intelligence (MICAI-07)
+        booktitle-url: http://www.micai.org/2007/
+        authors: Francisco Guzmán, and Leonardo Garrido
+        doc-url: papers/MICAI2007-Guzman.pdf
+        slides: media/MICAI2007-Guzman.pdf
+        img: MICAI2007-Guzman
+        venue: conference
+        pages: 163-172
+        abstract: >
+            Statistical methods have proven to be very effective when addressing linguistic problems, specially when dealing with Machine Translation. Nevertheless, Statistical Machine Translation effectiveness is limited to situations where large amounts of training data are available. Therefore, the broader the coverage of a SMT system is, the better the chances to get a reasonable output are. In this paper we propose a method to improve quality of translations of a phrase-based Machine Translation system by extending phrase-tables with the use of translation paraphrases learned from a third language. Our experiments were done translating from Spanish to English pivoting through French.
+
+        bibtex: >
+            @inproceedings{guzman:2007:using,
+            Author = {Guzm{\'a}n, Francisco and Garrido, Leonardo},
+            Booktitle = {Sixth Mexican International Conference on Artificial Intelligence {(MICAI'07)}. },
+            Organization = {IEEE},
+            Pages = {163--172},
+            Title = {Using Translation Paraphrases from Trilingual Corpora to Improve Phrase-Based Statistical Machine Translation: A Preliminary Report},
+            Month = {November},
+            address = { Aguascalientes, Mexico},
+            Year = {2007},
+            Abstract = {Statistical methods have proven to be very effective when addressing linguistic problems, specially when dealing with Machine Translation. Nevertheless, Statistical Machine Translation effectiveness is limited to situations where large amounts of training data are available. Therefore, the broader the coverage of a SMT system is, the better the chances to get a reasonable output are. In this paper we propose a method to improve quality of translations of a phrase-based Machine Translation system by extending phrase-tables with the use of translation paraphrases learned from a third language. Our experiments were done translating from Spanish to English pivoting through French.}}
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        title: Translation paraphrases in phrase-based machine translation
+        booktitle: Computational Linguistics and Intelligent Text Processing (CICLing'08)
+        booktitle-url: http://www.cicling.org/2008/
+        img: CICLING2008-Guzman
+        doc-url: papers/CICLING2008-Guzman.pdf
+        authors: Francisco Guzmán, and Leonardo Garrido
+        slides: media/CICLING2008-Guzman.pdf
+        venue: conference
+        year: 2008
+        pages: 388-398
+        abstract: >
+            In this paper we present an analysis of a phrase-based machine translation methodology that integrates paraphrases obtained from an intermediary language (French) for translations between Spanish and English. The purpose of the research presented in this document is to find out how much extra information (i.e. improvements in translation quality) can be found when using Translation Paraphrases (TPs). In this document we present an extensive statistical analysis to support conclusions.
+
+        bibtex: >
+            @inproceedings{guzman:2008:translation,
+            Author = {Guzm{\'a}n, Francisco and Garrido, Leonardo},
+            Booktitle = {Computational Linguistics and Intelligent Text Processing {(CICLing'08)}},
+            Pages = {388--398},
+            address = {Haifa, Israel},
+            Title = {Translation paraphrases in phrase-based machine translation},
+            Publisher = {Springer Berlin Heidelberg},
+            Month = { February},
+            Year = {2008},
+            Abstract = { In this paper we present an analysis of a phrase-based machine translation methodology that integrates paraphrases obtained from an intermediary language (French) for translations between Spanish and English. The purpose of the research presented in this document is to find out how much extra information (i.e. improvements in translation quality) can be found when using Translation Paraphrases (TPs). In this document we present an extensive statistical analysis to support conclusions.}}
+    
+    -
+        layout: paper
+        paper-type: inproceedings
+        selected: yes
+        year: 2009
+        img: MTSummit2009-Guzman
+        title: Reassessment of the role of phrase extraction in pbsmt
+        doc-url: papers/MTSummit2009-Guzman.pdf
+        authors: Francisco Guzmán, Qin Gao and Stephan Vogel
+        booktitle: Machine Translation Summit XII
+        slides: media/MTSUMMIT2009-Guzman.pdf
+        booktitle-url: http://http://summitxii.amtaweb.org/
+        venue: conference
+        abstract: > 
+            In this paper we study in detail the relation between word alignment and phrase extraction. First, we analyze different word alignments according to several characteristics and compare them to hand-aligned data. Secondly, we analyzed the phrase-pairs generated by these alignments. We observed that the number of unaligned words has a large impact on the characteristics of the phrase table. A manual evaluation of phrase pair quality showed that the increase in the number of unaligned words results in a lower quality. Finally, we present translation results from using the number of unaligned words as features from which we obtain up to 2BP of improvement.
+        
+        bibtex: >
+            @inproceedings{guzman:2009:reassessment,
+              Author = {Guzm{\'a}n, Francisco and Gao, Qin and Vogel, Stephan},
+              Booktitle = {The Twelfth Machine Translation Summit ({MTSummit XII})},
+              Organization = {International Association for Machine Translation},
+              Title = {Reassessment of the Role of Phrase Extraction in {PBSMT} },
+              address = {Ottawa, Canada},
+              Month = {August},
+              Year = {2009},
+              Abstract ={In this paper we study in detail the relation between word alignment and phrase extraction. First, we analyze different word alignments according to several characteristics and compare them to hand-aligned data. Secondly, we analyzed the phrase-pairs generated by these alignments. We observed that the number of unaligned words has a large impact on the characteristics of the phrase table. A manual evaluation of phrase pair quality showed that the increase in the number of unaligned words results in a lower quality. Finally, we present translation results from using the number of unaligned words as features from which we obtain up to 2BP of improvement.}}
+
+    - 
+        layout: paper
+        paper-type: inproceedings
+        authors: Qin Gao, Francisco Guzmán, and Stephan Vogel
+        year: 2010
+        booktitle: Proceedings of the 23rd International Conference on Computational Linguistics (COLING 2010)
+        booktitle-url: http://aclanthology.info/events/coling-2010
+        title: >
+            EMDC: a semi-supervised approach for word alignment
+        doc-url: papers/COLING2010-Gao
+        img: COLING2010-Gao
+        pages: 349-357
+        venue: conference
+        abstract: >
+            This paper proposes a novel semi-supervised word alignment technique called EMDC that integrates discriminative and generative methods. A discriminative aligner is used to find high precision partial alignments that serve as constraints for a generative aligner which implements a constrained version of the EM algorithm. Experiments on small-size Chinese and Arabic tasks show consistent improvements on AER. We also experimented with moderate-size Chinese machine translation tasks and got an average of 0.5 point improvement on BLEU scores across five standard NIST test sets and four other test sets.
+
+        bibtex: >
+            @inproceedings{gao:2010:emdc,
+            Author = {Gao, Qin and Guzm{\'a}n, Francisco and Vogel, Stephan},
+            Booktitle = {Proceedings of the 23rd International Conference on Computational Linguistics {(COLING 2010)}},
+            Organization = {Association for Computational Linguistics},
+            Pages = {349--357},
+            Title = {EMDC: a semi-supervised approach for word alignment},
+              address = {Beijing, China},
+                Year = {2010},
+              Abstract= This paper proposes a novel semi-supervised word alignment technique called EMDC that integrates discriminative and generative methods. A discriminative aligner is used to find high precision partial alignments that serve as constraints for a generative aligner which implements a constrained version of the EM algorithm. Experiments on small-size Chinese and Arabic tasks show consistent improvements on AER. We also experimented with moderate-size Chinese machine translation tasks and got an average of 0.5 point improvement on BLEU scores across five standard NIST test sets and four other test sets.}
+    -
+        layout: paper
+        paper-type: incollection
+        year: 2011
+        selected: yes
+        title: Word Alignment Revisited
+        authors: Francisco Guzmán, Qin Gao, Jan Niehues, and Stephan Vogel
+        doc-url: papers/GALEBOOK2011-Guzman-first.pdf
+        img: GALEBOOK2011-Guzman
+        pages: 164-175
+        editor: Joseph Olive, Caitlin Christianson,  and John McCary
+        publisher: Springer Science & Business Media
+        venue: book
+        booktitle: >
+            Handbook of Natural Language Processing and Machine Translation: DARPA global autonomous language exploitation
+        bibtex: >
+            @incollection{francisco:2011:word,
+            Author = {Francisco Guzm{\'a}n, Qin Gao, Jan Niehues and Stephan Vogel},
+            Booktitle = {Handbook of Natural Language Processing and Machine Translation: DARPA global autonomous language exploitation.},
+            Pages = {164--175},
+            editor = {Olive, Joseph and Christianson, Caitlin and McCary, John},
+            publisher={Springer Science \& Business Media}
+            Title = {Word Alignment Revisited},
+            Year = {2011}}
+    -
+        layout: paper
+        paper-type: phdthesis
+        year: 2011
+        selected: no
+        title: >
+            The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+        authors: Francisco Guzmán
+        img: Thesis2011-Guzman
+        venue: thesis
+        doc-url: papers/Thesis2011-Guzman.pdf
+        slides: media/Thesis2011-Guzman.pptx
+        abstract: >
+            Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be    controlled by modifying word alignment’s characteristics.
+            In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited.
+            During the development of this dissertation we discovered how different characteristics of the alignment impact Machine Translation. We observed that while good quality alignments yield good phrase-pairs, the consolidation of a translation model is dependent on the alignment structure, not quality. Human-alignments are more dense than the computer generated counterparts, which trend to be more sparse and precision-oriented. Trying to emulate human-like alignment structure resulted in poorer systems, because the resulting translation models trend to be more compact and lack translation options. On the other hand, more translation options, even if they are noisier, help to improve the quality of the translation. This is due to the fact that translation does not rely only on the translation model, but also other factors that help to discriminate the noise from bad translations (e.g. the language model). Lastly, when we provide the decoder with features that help it to make more `informed decisions'' we observe a clear improvement in translation quality. This was specially true for the discriminative alignments which inherently leave more unaligned words. The result is more evident in low-resource settings where having larger translation lexicons represent more translation options. Using simple features to help the decoder discriminate translation hypotheses, clearly showed consistent improvements.
+        bibtex: >
+            @phdthesis{guzman-thesis:2011,
+             abstract = {Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be controlled by modifying word alignment’s characteristics.
+            In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited.
+            During the development of this dissertation we discovered how different characteristics of the alignment impact Machine Translation. We observed that while good quality alignments yield good phrase-pairs, the consolidation of a translation model is dependent on the alignment structure, not quality. Human-alignments are more dense than the computer generated counterparts, which trend to be more sparse and precision-oriented. Trying to emulate human-like alignment structure resulted in poorer systems, because the resulting translation models trend to be more compact and lack translation options. On the other hand, more translation options, even if they are noisier, help to improve the quality of the translation. This is due to the fact that translation does not rely only on the translation model, but also other factors that help to discriminate the noise from bad translations (e.g. the language model). Lastly, when we provide the decoder with features that help it to make more `informed decisions'' we observe a clear improvement in translation quality. This was specially true for the discriminative alignments which inherently leave more unaligned words. The result is more evident in low-resource settings where having larger translation lexicons represent more translation options. Using simple features to help the decoder discriminate translation hypotheses, clearly showed consistent improvements.},
+             author = {Guzm{\'a}n, Francisco},
+             month = {December},
+             school = {Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Monterrey},
+             title = {The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation},
+             year = {2011}
+            }
+    - 
+        layout: paper
+        paper-type: inproceedings
+        year: 2012
+        title: > 
+            QCRI at WMT12: Experiments in Spanish-English and German-English Machine Translation of News Text
+        authors: Francisco Guzmán, Preslav Nakov, Ahmed Thabet, and Stephan Vogel
+        pages: 298-303
+        doc-url: papers/WMT2012-Guzman.pdf
+        slides: media/WMT2012-Guzman.pdf
+        booktitle: Proceedings of the Seventh Workshop on Statistical Machine Translation (WMT'12)
+        booktitle-url: http://www.statmt.org/wmt12/
+        img: WMT2012-Guzman
+        venue: workshop
+        abstract: > 
+            We describe the systems developed by the team of the Qatar Computing Research Institute for the WMT12 Shared Translation Task. We used a phrase-based statistical machine translation model with several non-standard settings, most notably tuning data selection and phrase table combination. The evaluation results show that we rank second in BLEU and TER for Spanish-English, and in the top tier for German-English.
+
+        bibtex: >
+            @InProceedings{guzman-EtAl:2012:WMT,
+              author    = {Guzm{\'a}n, Francisco  and  Nakov, Preslav  and  Thabet, Ahmed  and  Vogel, Stephan},
+              title     = {{QCRI} at {WMT}12: Experiments in Spanish-English and German-English Machine Translation of News Text},
+              booktitle = {Proceedings of the Seventh Workshop on Statistical Machine Translation ({WMT'12})},
+              month     = {June},
+              year      = {2012},
+              address   = {Montr{\'e}al, Canada},
+              publisher = {Association for Computational Linguistics},
+              pages     = {298--303},
+              url       = {http://www.aclweb.org/anthology/W12-3136},
+              abstract = {We describe the systems developed by the team of the Qatar Computing Research Institute for the WMT12 Shared Translation Task. We used a phrase-based statistical machine translation model with several non-standard settings, most notably tuning data selection and phrase table combination. The evaluation results show that we rank second in BLEU and TER for Spanish-English, and in the top tier for German-English.}
+            }
+    -
+        layout: paper
+        paper-type: inproceedings
+        selected: yes
+        year: 2012
+        img: COLING2012-Nakov
+        title: Optimizing for Sentence-Level BLEU+1 Yields Short Translations
+        doc-url: papers/COLING2012-Nakov.pdf
+        authors: Preslav Nakov, Francisco Guzmán, and Stephan Vogel
+        slides: media/COLING2012-Nakov.pdf
+        booktitle: Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)
+        booktitle-url: http://aclweb.org/portal/content/24th-international-conference-computational-linguistics
+        venue: conference
+        pages: 1979–1994
+        abstract: > 
+            We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).
+
+        bibtex: >
+            @inproceedings{nakov-guzman-vogel:2012:PAPERS,
+              author    = {Nakov, Preslav  and  Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+              title     = {Optimizing for Sentence-Level {BLEU}+1 Yields Short Translations},
+              booktitle = {Proceedings of the 24rd International Conference on Computational Linguistics (COLING) 2012 },
+              month     = {December},
+              year      = {2012},
+              address   = {Mumbai, India},
+              publisher = {The {COLING} 2012 Organizing Committee},
+              pages     = {1979--1994},
+              url       = {http://www.aclweb.org/anthology/C12-1121},
+              abstract = {We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).}
+                }
+    -   
+        layout: paper
+        paper-type: inproceedings
+        year: 2012
+        title: >
+            Understanding the Performance of Statistical MT Systems: A Linear Regression Framework
+        authors: Francisco Guzmán, and  Stephan Vogel
+        doc-url: papers/COLING2012-Guzman.pdf
+        media: media/COLING2012-Guzman.ppt
+        img: COLING2012-Guzman
+        booktitle: Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)
+        booktitle-url: http://aclweb.org/portal/content/24th-international-conference-computational-linguistics
+        pages: 1029-1044
+        venue: conference
+        abstract: >
+            abstract = {We present a framework for the analysis of Machine Translation performance. We use multivariate linear models to determine the impact of a wide range of features on translation performance. Our assumption is that variables that most contribute to predict translation performance are the key to understand the differences between good and bad translations. During training, we learn the regression parameters that better predict translation quality using a wide range of input features based on the translation model and the first-best translation hypotheses. We use a linear regression with regularization. Our results indicate that with regularized linear regression, we can achieve higher levels of correlation between our predicted values and the actual values of the quality metrics. Our analysis shows that the performance for in-domain data is largely dependent on the characteristics of the translation model. On the other hand, out-of domain data can benefit from better reordering strategies.
+        bibtex: > 
+            @InProceedings{guzman-vogel:2012:PAPERS,
+              author    = {Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+              title     = {Understanding the Performance of Statistical {MT} Systems: A Linear Regression Framework},
+              booktitle = {Proceedings of the 24rd International Conference on Computational Linguistics {(COLING 2012)},
+              month     = {December},
+              year      = {2012},
+              address   = {Mumbai, India},
+              pages     = {1029--1044},
+              url       = {http://www.aclweb.org/anthology/C12-1063},
+                abstract = {We present a framework for the analysis of Machine Translation performance. We use multivariate linear models to determine the impact of a wide range of features on translation performance. Our assumption is that variables that most contribute to predict translation performance are the key to understand the differences between good and bad translations. During training, we learn the regression parameters that better predict translation quality using a wide range of input features based on the translation model and the first-best translation hypotheses. We use a linear regression with regularization. Our results indicate that with regularized linear regression, we can achieve higher levels of correlation between our predicted values and the actual values of the quality metrics. Our analysis shows that the performance for in-domain data is largely dependent on the characteristics of the translation model. On the other hand, out-of domain data can benefit from better reordering strategies.
+            }
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2013
+        selected: yes
+        title: >
+            A Tale about PRO and Monsters
+        authors: Preslav Nakov, Francisco Guzmán, and Stephan Vogel
+        img: ACL2013_Short-Nakov
+        venue: conference
+        pages: 12-17
+        booktitle: Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (ACL'13)
+        slides: media/ACL2013-Nakov.pptx
+        booktitle-url: http://acl2013.org/
+        doc-url: papers/ACL2013_Short-Nakov.pdf
+        abstract: >
+            While experimenting with tuning on long sentences, we made an unexpected discovery: that PRO falls victim to monsters -overly long negative examples with very low BLEU+1 scores, which are unsuitable for learning and can cause testing BLEU to drop by several points absolute. We propose several effective ways to address the problem, using length- and BLEU+1- based cut-offs, outlier filters, stochastic sampling, and random acceptance. The best of these fixes not only slay and protect against monsters, but also yield higher stability for PRO as well as improved test-time BLEU scores. Thus, we recommend them to anybody using PRO, monster-believer or not.
+        bibtex: >
+            @inproceedings{nakov-guzman-vogel:2013:Short,
+             abstract = {While experimenting with tuning on long sentences, we made an unexpected discovery: that PRO falls victim to monsters -overly long negative examples with very low BLEU+1 scores, which are unsuitable for learning and can cause testing BLEU to drop by several points absolute. We propose several effective ways to address the problem, using length- and BLEU+1- based cut-offs, outlier filters, stochastic sampling, and random acceptance. The best of these fixes not only slay and protect against monsters, but also yield higher stability for PRO as well as improved test-time BLEU scores. Thus, we recommend them to anybody using PRO, monster-believer or not.},
+             address = {Sofia, Bulgaria},
+             author = {Nakov, Preslav  and  Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+             booktitle = {Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics ({ACL'13})},
+             link = {http://www.aclweb.org/anthology/P13-2003},
+             month = {August},
+             pages = {12--17},
+             title = {A Tale about {PRO} and Monsters},
+             year = {2013}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2013
+        selected: no
+        title: >
+            Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples
+        authors: Preslav Nakov, Fahad Al Obaidli, Francisco Guzmán, and Stephan Vogel
+        img: RANLP2013-Nakov
+        slides: media/RANLP2013-Nakov.pdf
+        venue: conference
+        booktitle: Proceedings of the International Conference Recent Advances in Natural Language Processing (RANLP'13)
+        booktitle-url: http://lml.bas.bg/ranlp2013
+        doc-url: papers/RANLP2013-Nakov.pdf
+        abstract: >
+            Research on statistical machine translation has focused on particular translation directions, typically with English as the target language, e.g., from Arabic to English. When we reverse the translation direction, the multiple reference translations turn into multiple possible inputs, which offers both challenges and opportunities. We propose and evaluate several strategies for making use of these multiple inputs: (a) select one of the datasets, (b) select the best input for each sentence, and (c) synthesize an input for each sentence by fusing the available inputs. Surprisingly, we find out that it is best to tune on the hardest available input, not on the one that yields the highest BLEU score. This finding has implications on how to pick good translators and how to select useful data for parameter optimization in SMT.
+        bibtex: >
+            @inproceedings{nakov:2013:parameter,
+             abstract = {Research on statistical machine translation has focused on particular translation directions, typically with English as the target language, e.g., from Arabic to English. When we reverse the translation direction, the multiple reference translations turn into multiple possible inputs, which offers both challenges and opportunities. We propose and evaluate several strategies for making use of these multiple inputs: (a) select one of the datasets, (b) select the best input for each sentence, and (c) synthesize an input for each sentence by fusing the available inputs. Surprisingly, we find out that it is best to tune on the hardest available input, not on the one that yields the highest BLEU score. This finding has implications on how to pick good translators and how to select useful data for parameter optimization in SMT.},
+             author = {Nakov, Preslav and Al Obaidli, Fahad and Guzm{\'a}n, Francisco and Vogel, Stephan},
+             booktitle = {Proceedings of the International Conference Recent Advances in Natural Language Processing ({RANLP}'13)},
+             month = {September},
+             title = {Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples},
+             year = {2013}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2013
+        selected: no
+        title: >
+            QCRI at IWSLT 2013: Experiments in Arabic-English and English-Arabic Spoken Language Translation
+        authors: Hassan Sajjad, Francisco Guzmán, Preslav Nakov, Ahmed Abdelali, Kenton Murray, Fahad Al Obaidli, and Stephan Vogel
+        img: IWSLT2013-Sajjad
+        venue: workshop
+        booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
+        slides: media/IWSLT2013-Sajjad.pdf
+        booktitle-url: http://workshop2013.iwslt.org/
+        doc-url: papers/IWSLT2013-Sajjad.pdf
+        abstract: >
+            We describe the Arabic-English and English-Arabic statistical machine translation systems developed by the Qatar Computing Research Institute for the IWSLT’2013 evaluation campaign on spoken language translation. We used one phrase-based and two hierarchical decoders, exploring various settings thereof. We further experimented with three domain adaptation methods, and with various Arabic word segmentation schemes. Combining the output of several systems yielded a gain of up to 3.4 BLEU points over the baseline. Here we also describe a specialized normalization scheme for evaluating Arabic output, which was adopted for the IWSLT’2013 evaluation campaign.
+        bibtex: >
+            @inproceedings{sajjad:2013:qcri,
+             abstract = {We describe the Arabic-English and English-Arabic statistical machine translation systems developed by the Qatar Computing Research Institute for the IWSLT’2013 evaluation campaign on spoken language translation. We used one phrase-based and two hierarchical decoders, exploring various settings thereof. We further experimented with three domain adaptation methods, and with various Arabic word segmentation schemes. Combining the output of several systems yielded a gain of up to 3.4 BLEU points over the baseline. Here we also describe a specialized normalization scheme for evaluating Arabic output, which was adopted for the IWSLT’2013 evaluation campaign.},
+             address = {Heidelberg, Germany},
+             author = {Sajjad, Hassan and Guzm{\'a}n, Francisco and Nakov, Preslav and Abdelali, Ahmed and Murray, Kenton and Al Obaidli, Fahad and Vogel, Stephan},
+             booktitle = {Proceedings of the 10th International Workshop on Spoken Language Translation {(IWSLT'13)}},
+             month = {December},
+             title = {{QCRI} at {IWSLT} 2013: Experiments in Arabic-English and English-Arabic Spoken Language Translation},
+             volume = {13},
+             year = {2013}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2013
+        selected: yes
+        title: >
+            The AMARA Corpus: Building Resources for Translating the Web's Educational Content
+        authors: Francisco Guzmán, Hassan Sajjad, Ahmed Abdelali, and Stephan Vogel
+        img: IWSLT2013-Guzman
+        venue: workshop
+        booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
+        slides: media/IWSLT2013-Guzman.pptx
+        booktitle-url: http://workshop2013.iwslt.org/
+        doc-url: papers/IWSLT2013-Guzman.pdf
+        abstract: >
+            In this paper, we introduce a new parallel corpus of subtitles of educational videos: the AMARA corpus for online educational content. We crawl a multilingual collection community generated subtitles, and present the results of processing the Arabic–English portion of the data, which yields a parallel corpus of about 2.6M Arabic and 3.9M English words. We explore different approaches to align the segments, and extrinsically evaluate the resulting parallel corpus on the standard TED-talks tst-2010. We observe that the data can be successfully used for this task, and also observe an absolute improvement of 1.6 BLEU when it is used in combination with TED data. Finally, we analyze some of the specific challenges when translating the educational content.
+        bibtex: >
+            @inproceedings{guzman:2013:amara,
+             abstract = {In this paper, we introduce a new parallel corpus of subtitles of educational videos: the AMARA corpus for online educational content. We crawl a multilingual collection community generated subtitles, and present the results of processing the Arabic–English portion of the data, which yields a parallel corpus of about 2.6M Arabic and 3.9M English words. We explore different approaches to align the segments, and extrinsically evaluate the resulting parallel corpus on the standard TED-talks tst-2010. We observe that the data can be successfully used for this task, and also observe an absolute improvement of 1.6 BLEU when it is used in combination with TED data. Finally, we analyze some of the specific challenges when translating the educational content.},
+             address = {Heidelberg, Germany},
+             author = {Guzm{\'a}n, Francisco and Sajjad, Hassan and Abdelali, Ahmed and Vogel, Stephan},
+             booktitle = {Proceedings of the 10th International Workshop on Spoken Language Translation {(IWSLT'13})},
+             month = {December},
+             title = {The {AMARA} Corpus: Building Resources for Translating the Web's Educational Content},
+             volume = {13},
+             year = {2013}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2014
+        selected: no
+        title: >
+            The AMARA Corpus: Building parallel language resources for the educational domain
+        authors: Ahmed Abdelali, Francisco Guzmán, Hassan Sajjad, and Stephan Vogel
+        img: LREC2014-Abdelali
+        venue: conference
+        slides: media/LREC2014-Abdelali.pdf
+        booktitle: Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)
+        booktitle-url: http://lrec2014.lrec-conf.org/
+        doc-url: papers/LREC2014-Abdelali.pdf
+        abstract: >
+            This paper presents the AMARA corpus of on-line educational content: a new parallel corpus of educational video subtitles, multilingually aligned for 20 languages, i.e. 20 monolingual corpora and 190 parallel corpora. This corpus includes both resource-rich languages such as English and Arabic, and resource-poor languages such as Hindi and Thai. In this paper, we describe the gathering, validation, and preprocessing of a large collection of parallel, community-generated subtitles. Furthermore, we describe the methodology used to prepare the data for Machine Translation tasks. Additionally, we provide a document-level, jointly aligned development and test sets for 14 language pairs, designed for tuning and testing Machine Translation systems. We provide baseline results for these tasks, and highlight some of the challenges we face when building machine translation systems for educational content.
+        bibtex: >
+            @inproceedings{abdelali:2014:amara,
+             abstract = {This paper presents the AMARA corpus of on-line educational content: a new parallel corpus of educational video subtitles, multilingually aligned for 20 languages, i.e. 20 monolingual corpora and 190 parallel corpora. This corpus includes both resource-rich languages such as English and Arabic, and resource-poor languages such as Hindi and Thai. In this paper, we describe the gathering, validation, and preprocessing of a large collection of parallel, community-generated subtitles. Furthermore, we describe the methodology used to prepare the data for Machine Translation tasks. Additionally, we provide a document-level, jointly aligned development and test sets for 14 language pairs, designed for tuning and testing Machine Translation systems. We provide baseline results for these tasks, and highlight some of the challenges we face when building machine translation systems for educational content.},
+             address = {Reykjavik, Iceland},
+             author = {Abdelali, Ahmed and Guzm{\'a}n, Francisco and Sajjad, Hassan and Vogel, Stephan},
+             booktitle = {Proceedings of the Ninth International Conference on Language Resources and Evaluation ({LREC}'14)},
+             month = {april},
+             title = {The {AMARA} Corpus: Building parallel language resources for the educational domain},
+             year = {2014}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2014
+        selected: no
+        title: >
+            Amara: A Sustainable, Global Solution for Accessibility, Powered by Communities of Volunteers
+        authors: Dean Jansen, Aleli Alcala, and Francisco Guzmán
+        img: HCII2014-Jansen
+        venue: conference
+        pages: 401-411
+        booktitle: Universal Access in Human-Computer Interaction. Design for All and Accessibility Practice
+        doc-url: papers/HCII2014-Jansen.pdf
+        abstract: >
+            In this paper, we present the main features of the Amara project, and its impact on the accessibility landscape with the use of innovative technology. We also show the effectiveness of volunteer communities in addressing large subtitling and translation tasks, that accompany the ever-growing amounts of online video content. Furthermore, we present two different applications for the platform. First, we examine the growing interest of organizations to build their own subtitling communities. Second, we present how the community-generated material can be used to advance the state-of-the-art of research in fields such as Statistical Machine Translation with focus on educational translation. We provide examples on how both tasks can be achieved successfully.
+        bibtex: >
+            @inproceedings{jansen:2014:amara,
+             abstract = {In this paper, we present the main features of the Amara project, and its impact on the accessibility landscape with the use of innovative technology. We also show the effectiveness of volunteer communities in addressing large subtitling and translation tasks, that accompany the ever-growing amounts of online video content. Furthermore, we present two different applications for the platform. First, we examine the growing interest of organizations to build their own subtitling communities. Second, we present how the community-generated material can be used to advance the state-of-the-art of research in fields such as Statistical Machine Translation with focus on educational translation. We provide examples on how both tasks can be achieved successfully.},
+             address = {Heraklion, Greece},
+             author = {Jansen, Dean and Alcala, Aleli and Guzm{\'a}n, Francisco},
+             booktitle = {Universal Access in Human-Computer Interaction. Design for All and Accessibility Practice},
+             month = {June},
+             pages = {401--411},
+             publisher = {Springer International Publishing},
+             title = {Amara: A Sustainable, Global Solution for Accessibility, Powered by Communities of Volunteers},
+             year = {2014}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2014
+        selected: yes
+        title: >
+            Using Discourse Structure Improves Machine Translation Evaluation
+        authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
+        img: ACL2014-Guzman
+        venue: conference
+        pages: 687-698
+        booktitle: Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL'14)
+        booktitle-url: http://acl2014.org/
+        slides: media/ACL2014-Guzman.pdf
+        doc-url: papers/ACL2014-Guzman.pdf
+        abstract: >
+            We present experiments in using discourse structure for improving machine translation evaluation. We first design two discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory. Then, we show that these measures can help improve a number of existing machine translation evaluation metrics both at the segmentand at the system-level. Rather than proposing a single new metric, we show that discourse information is complementary to the state-of-the-art evaluation metrics, and thus should be taken into account in the development of future richer evaluation metrics.
+        bibtex: >
+            @inproceedings{guzman-EtAl:2014:P14-1,
+             abstract = {We present experiments in using discourse structure for improving machine translation evaluation. We first design two discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory. Then, we show that these measures can help improve a number of existing machine translation evaluation metrics both at the segmentand at the system-level. Rather than proposing a single new metric, we show that discourse information is complementary to the state-of-the-art evaluation metrics, and thus should be taken into account in the development of future richer evaluation metrics.},
+             address = {Baltimore, Maryland, USA},
+             author = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav},
+             booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics ({ACL}'14)},
+             link = {http://www.aclweb.org/anthology/P/P14/P14-1065},
+             month = {June},
+             pages = {687--698},
+             publisher = {Association for Computational Linguistics},
+             title = {Using Discourse Structure Improves Machine Translation Evaluation},
+             year = {2014}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2014
+        selected: no
+        title: >
+            DiscoTK: Using Discourse Structure for Machine Translation Evaluation
+        authors: Shafiq Joty, Francisco Guzmán, Lluís Màrquez, and Preslav Nakov
+        img: WMT2014-Joty
+        venue: workshop
+        pages: 402-408
+        slides: media/WMT2014-Joty.pdf
+        booktitle: Proceedings of the Ninth Workshop on Statistical Machine Translation (WMT'14)
+        booktitle-url: http://statmt.org/wmt14
+        doc-url: papers/WMT2014-Joty.pdf
+        abstract: >
+            We present novel automatic metrics for machine translation evaluation that use discourse structure and convolution kernels to compare the discourse tree of an automatic translation with that of the human reference. We experiment with five transformations and augmentations of a base discourse tree representation based on the rhetorical structure theory, and we combine the kernel scores for each of them into a single score. Finally, we add other metrics from the ASIYA MT evaluation toolkit, and we tune the weights of the combination on actual human judgments. Experiments on the WMT12 and WMT13 metrics shared task datasets show correlation with human judgments that outperforms what the best systems that participated in these years achieved, both at the segment and at the system level.
+        bibtex: >
+            @inproceedings{joty-EtAl:2014:W14-33,
+             abstract = {We present novel automatic metrics for machine translation evaluation that use discourse structure and convolution kernels to compare the discourse tree of an automatic translation with that of the human reference. We experiment with five transformations and augmentations of a base discourse tree representation based on the rhetorical structure theory, and we combine the kernel scores for each of them into a single score. Finally, we add other metrics from the ASIYA MT evaluation toolkit, and we tune the weights of the combination on actual human judgments. Experiments on the WMT12 and WMT13 metrics shared task datasets show correlation with human judgments that outperforms what the best systems that participated in these years achieved, both at the segment and at the system level.},
+             address = {Baltimore, Maryland, USA},
+             author = {Joty, Shafiq  and  Guzm\'{a}n, Francisco  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav},
+             booktitle = {Proceedings of the Ninth Workshop on Statistical Machine Translation ({WMT}'14)},
+             link = {http://www.aclweb.org/anthology/W/W14/W14-3352},
+             month = {June},
+             pages = {402--408},
+             publisher = {Association for Computational Linguistics},
+             title = {DiscoTK: Using Discourse Structure for Machine Translation Evaluation},
+             year = {2014}
+            }
+
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2014
+        selected: yes
+        title: >
+            Learning to Differentiate Better from Worse Translations
+        authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, Alessandro Moschitti, Preslav Nakov, and Massimo Nicosia
+        img: EMNLP2014-Guzman
+        venue: conference
+        pages: 214-220
+        slides: media/EMNLP2014-Guzman.pdf
+        booktitle: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)
+        booktitle-url: http://emnlp2014.org/
+        doc-url:  papers/EMNLP2014-Guzman.pdf
+        abstract: >
+            We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.
+        bibtex: >
+            @inproceedings{guzman-EtAl:2014:EMNLP2014,
+             abstract = {We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.},
+             address = {Doha, Qatar},
+             author = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Moschitti, Alessandro  and  Nakov, Preslav  and  Nicosia, Massimo},
+             booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+             link = {http://www.aclweb.org/anthology/D14-1027},
+             month = {October},
+             pages = {214--220},
+             publisher = {Association for Computational Linguistics},
+             title = {Learning to Differentiate Better from Worse Translations},
+             year = {2014}
+            }
