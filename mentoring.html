@@ -1,0 +1,36 @@
+---
+layout: default
+title: Francisco Guzman | Mentoring
+picture: paco
+
+---
+
+
+
+<div class="page-header">
+  <h3>Mentoring</h3>
+</div>
+
+<blockquote>
+  <p>
+      Although I do not have teaching duties (at the moment), I really enjoy encouraging students to solve hard problems. It is one of the best perks of my job.
+ </p>
+</blockquote>
+
+
+
+<h4>Current Mentored Intern Projects</h4>
+<ul class="dl-horizontal">
+  {% for post in site.data.mentoring["current-projects"] %}
+    {% include interns.html post=post %}
+  {% endfor %}
+</ul>
+<h4>Past Mentored Intern Projects</h4>
+<ul class="dl-horizontal">
+  {% assign projects = site.data.mentoring["past-projects"] | sort: "year"| reverse %}
+  {% for post in projects %}
+    {% include interns.html post=post %}
+  {% endfor %}
+</ul>
+  
+

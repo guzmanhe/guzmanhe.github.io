@@ -1,0 +1,14 @@
+
+  <h4>Mentoring</h4>
+  <ul>
+    {%assign projects= site.data.mentoring["past-projects"] | sort: "year" | reverse  %}
+  {% for item in projects %}
+      <li>
+        {{ item.title }}.
+        {% if item.year %}{{ item.year }} ({{item.duration}}).{% endif %}
+        {% if item.detail %}{{ item.detail }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+

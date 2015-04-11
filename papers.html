@@ -11,7 +11,7 @@ picture: paco
 <h4>Papers</h4>
 
 
- {%assign  years = site.papers | group_by :"year" | sort: "title" | reverse %}
+ {%assign  years = site.data.papers | group_by :"year" | sort: "title" | reverse %}
  {% for year in years %}
   <h5> {{year.name}}</h5>
  {% for post in year.items %}
@@ -20,7 +20,7 @@ picture: paco
 {% endfor %}
 <h4>Talks</h4>
 
-{% assign years= site.talks | group_by: "year"| sort: "name"| reverse %}
+{% assign years= site.data.talks | group_by: "year"| sort: "name"| reverse %}
 {%for year in years %}
 
 {% for talk in year.items %}
