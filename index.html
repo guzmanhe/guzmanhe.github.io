@@ -29,6 +29,7 @@ picture: paco
       <a href="http://github.com/guzmanhe">
         <img src="img/ico/github_icon.png" alt=""/>
       </a> Github
+
     </div>
   </div>
 </div>
@@ -39,11 +40,21 @@ picture: paco
 </blockquote>
 
 <h4>News</h4>
+<div class= "row">
+<div class="col-sm-8">
+
 <ul class="list-group">
 {% for item in site.data.news %}
    <li class="list-group-item"><span class="badge" >{{item.date | date: "%-d %b %y"}}</span><span>{{ item.text }}</span></li>
 {% endfor %}
 </ul>
+</div>
+<div class="col-sm-4" style="outline: 1px solid #5E472D;">
+  <a class="twitter-timeline" width="300" data-theme="light"
+  data-link-color="#5E472D"
+  height="500" href="https://twitter.com/guzmanhe" data-widget-id="587238060623929344">Tweets by @guzmanhe</a>
+</div>
+</div>
 
 <h4>Selected Papers</h4>
 
