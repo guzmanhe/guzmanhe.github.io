@@ -564,3 +564,20 @@
              title = {Learning to Differentiate Better from Worse Translations},
              year = {2014}
             }
+    -
+        layout: paper
+        toappear: yes
+        paper-type: inproceedings
+        year: 2015
+        selected: yes
+        title: >
+            Pairwise Neural Machine Translation Evaluation
+        authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
+        img: inpress
+        venue: conference
+        pages: 
+        slides: 
+        booktitle: >
+            Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
+            Federation of Natural Language Processing 
+        booktitle-url: http://acl2015.org/

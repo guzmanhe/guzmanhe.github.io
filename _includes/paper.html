@@ -9,7 +9,7 @@
     {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}  
     {% case include.paper.paper-type %}
       {% when "inproceedings" %}
-        In
+        {% if include.paper.toappear %} To appear in {% else %} In {% endif %}
         {% if include.paper.booktitle-url %}
           <a href="{{ include.paper.booktitle-url}}">
             <span class="glyphicon glyphicon-globe"></span>
