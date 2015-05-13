@@ -1,6 +1,15 @@
 -
         layout: talk
         year: 2015
+        date: 11-May-2015
+        detail: >
+            I gave a talk "A Brief Introduction to MT Evaluation" at the <a href="http://www.statmt.org/mtma15/">First MT Marathon in the Americas</a>
+        url: media/TMTMarathon2015-Guzman.pdf
+        img: TMTMarathon2015-Guzman
+        title: A Brief introduction to MT Evaluation
+-
+        layout: talk
+        year: 2015
         detail: I gave a talk to my colleagues at QCRI about my recommendations on how to prepare for the summer internship program 
         url: media/TInternship-2015.pdf
         img: TInternship-2015
