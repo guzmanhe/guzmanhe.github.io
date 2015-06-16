@@ -575,9 +575,67 @@
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
         img: inpress
         venue: conference
+        doc-url:  papers/ACL2015-Guzman.pdf
         pages: 
-        slides: 
+        slides:
+        booktitle-url:  
         booktitle: >
             Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
             Federation of Natural Language Processing 
-        booktitle-url: http://acl2015.org/
+        
+
+    -
+        layout: paper
+        toappear: yes
+        paper-type: techreport
+        year: 2015
+        selected: no
+        title: >
+            The QCN Egyptian Arabic to English Statistical Machine Translation System for NIST OpenMT’2015
+        authors: Hassan Sajjad, Nadir Durrani, Francisco Guzmán, Preslav Nakov, Ahmed Abdelali, Stephan Vogel, Wael Salloum, Ahmed El Kholy, Nizar Habash
+        img: inpress
+        venue: workshop
+        doc-url:  papers/NIST2015-Sajjad.pdf
+        pages: 
+        slides:
+        booktitle-url:  
+        booktitle: Proceedings of the NIST Open Machine Translation Evaluation Workshop 
+    
+
+    -
+        layout: paper
+        toappear: yes
+        paper-type: inproceedings
+        year: 2015
+        selected: no
+        title: >
+            QAT<sup>2</sup>  – The QCRI Advanced Transcription and Translation System
+        authors: Ahmed Abdelali, Ahmed Ali, Francisco Guzmán, Felix Stahlberg, Stephan Vogel, Yifan Zhang
+
+        img: inpress
+        venue: conference
+        doc-url:  papers/INTERSPEECH2015-Abdelali.pdf
+        pages: 
+        slides:
+        booktitle-url:  
+        booktitle: Proceedings of INTERSPEECH 2015 
+
+
+    -
+        layout: paper
+        toappear: yes
+        paper-type: inproceedings
+        year: 2015
+        selected: no
+        title: >
+            Analyzing Optimization for Statistical Machine 
+            Translation: MERT Learns Verbosity, PRO Learns Length
+        authors: Francisco Guzmán, Preslav Nakov, Stephan Vogel
+        img: inpress
+        venue: conference
+        doc-url:  
+        pages: 
+        slides:
+        booktitle-url:  
+        booktitle: Proceedings of CoNLL 2015 
+
