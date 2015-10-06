@@ -704,7 +704,7 @@
         layout: paper
         paper-type: inproceedings
         year: 2015
-        selected: no
+        selected: yes
         title: >
             How do Humans Evaluate Machine Translation
         authors: Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel
