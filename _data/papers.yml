@@ -645,7 +645,7 @@
         authors: Ahmed Abdelali, Ahmed Ali, Francisco Guzmán, Felix Stahlberg, Stephan Vogel, Yifan Zhang
 
         img: INTERSPEECH2015-Abdelali
-        venue: conference
+        venue: demo
         doc-url:  papers/INTERSPEECH2015-Abdelali.pdf
         pages: 
         slides:
@@ -709,7 +709,7 @@
             How do Humans Evaluate Machine Translation
         authors: Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel
         img: WMT2015-Guzman
-        venue: conference
+        venue: workshop
         pages: 457-466
         booktitle: Proceedings of the Tenth Workshop on Statistical Machine Translation
         booktitle-url: http://www.statmt.org/wmt15/papers.html
