@@ -556,7 +556,7 @@
              abstract = {We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.},
              address = {Doha, Qatar},
              author = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Moschitti, Alessandro  and  Nakov, Preslav  and  Nicosia, Massimo},
-             booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+             booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP'14)},
              link = {http://www.aclweb.org/anthology/D14-1027},
              month = {October},
              pages = {214--220},
@@ -565,65 +565,108 @@
              year = {2014}
             }
     -
+    ### 2015
         layout: paper
-        toappear: yes
+        toappear: no
         paper-type: inproceedings
         year: 2015
+        month: July
         selected: yes
         title: >
             Pairwise Neural Machine Translation Evaluation
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
-        img: inpress
+        img: ACL2015-Guzman
         venue: conference
         doc-url:  papers/ACL2015-Guzman.pdf
-        pages: 
-        slides:
-        booktitle-url:  
+        booktitle-url: http://acl2015.org
+        pages: 805-814
+        slides: media/ACL2015-Guzman.pdf
+        abstract: >
+            We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
+ 
         booktitle: >
             Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
             Federation of Natural Language Processing 
         
+        bibtex: >
+            @InProceedings{guzman2015-ACL,
+            author    = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav },
+            title     = {Pairwise Neural Machine Translation Evaluation},
+              booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
+                        Federation of Natural Language Processing ({ACL}'15)},
+              month     = {July},
+              year      = {2015},
+              address   = {Beijing, China},
+              publisher = {Association for Computational Linguistics},
+              pages     = {805--814},
+              url       = {http://www.aclweb.org/anthology/P15-1078},
+              Abstract = {We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.}
+            }
 
     -
         layout: paper
-        toappear: yes
-        paper-type: techreport
+        toappear: no
+        paper-type: inproceedings
         year: 2015
+        month: may
         selected: no
         title: >
             The QCN Egyptian Arabic to English Statistical Machine Translation System for NIST OpenMT’2015
         authors: Hassan Sajjad, Nadir Durrani, Francisco Guzmán, Preslav Nakov, Ahmed Abdelali, Stephan Vogel, Wael Salloum, Ahmed El Kholy, Nizar Habash
-        img: inpress
+        img:  NIST2015-Sajjad
         venue: workshop
         doc-url:  papers/NIST2015-Sajjad.pdf
         pages: 
-        slides:
-        booktitle-url:  
+        slides: media/NIST2015-Sajjad.pdf
+        booktitle-url: http://www.nist.gov/itl/iad/openmt15.cfm
         booktitle: Proceedings of the NIST Open Machine Translation Evaluation Workshop 
+        abstract: >
+            The paper describes the Egyptian Arabic-to-English statistical machine translation (SMT) system that the QCRI-Columbia-NYUAD (QCN) group submitted to the NIST OpenMT'2015 competition. The competition focused on informal dialectal Arabic, as used in SMS, chat, and speech. Thus, our efforts focused on processing and standardizing Arabic, e.g., using tools such as 3arrib and MADAMIRA. We further trained a phrase-based SMT system using state-of-the-art features and components such as operation sequence model, class-based language model, sparse features, neural network joint model, genre-based hierarchically-interpolated language model, unsupervised transliteration mining, phrase-table merging, and hypothesis combination. Our system ranked second on all three genres.
+        bibtex: > 
+            @Proceedings{sajjad2015-NIST,
+              title={ The QCN Egyptian Arabic to English Statistical Machine Translation System for NIST OpenMT’2015},
+              author={Sajjad, Hassan and Durrani, Nadir and Guzmán, Francisco and Nakov, Preslav and Abdelali, Ahmed and Vogel, Stephan and Salloum, Wael and El Kholy, Ahmed and Habash, Nizar},
+              year={2015},
+              abstract={The paper describes the Egyptian Arabic-to-English statistical machine translation (SMT) system that the QCRI-Columbia-NYUAD (QCN) group submitted to the NIST OpenMT'2015 competition. The competition focused on informal dialectal Arabic, as used in SMS, chat, and speech. Thus, our efforts focused on processing and standardizing Arabic, e.g., using tools such as 3arrib and MADAMIRA. We further trained a phrase-based SMT system using state-of-the-art features and components such as operation sequence model, class-based language model, sparse features, neural network joint model, genre-based hierarchically-interpolated language model, unsupervised transliteration mining, phrase-table merging, and hypothesis combination. Our system ranked second on all three genres.},
+              booktitle={Proceedings of the NIST Open Machine Translation Evaluation Workshop},
+              publisher={NIST}
+            }
     
 
     -
         layout: paper
-        toappear: yes
+        toappear: no
         paper-type: inproceedings
         year: 2015
+        month: September
         selected: no
         title: >
             QAT<sup>2</sup>  – The QCRI Advanced Transcription and Translation System
         authors: Ahmed Abdelali, Ahmed Ali, Francisco Guzmán, Felix Stahlberg, Stephan Vogel, Yifan Zhang
 
-        img: inpress
+        img: INTERSPEECH2015-Abdelali
         venue: conference
         doc-url:  papers/INTERSPEECH2015-Abdelali.pdf
         pages: 
         slides:
-        booktitle-url:  
-        booktitle: Proceedings of INTERSPEECH 2015 
+        booktitle-url: http://interspeech2015.org 
+        booktitle: Proceedings of INTERSPEECH 
+        software: http://qatsdemo.cloudapp.net/qats/
+        abstract: >
+             QAT2 is a multimedia content translation web service developed by QCRI to help content provider to reach audiences and viewers speaking different languages. It is built with open source technologies such as KALDI, Moses and MaryTTS, to provide a complete translation experience for web users. It translates text content in its original format, and produce translated videos with speech-to-speech translation. The result is a complete native language experience for end users on foreign language websites. The system currently supports translation from Arabic to English.
+        bibtex: >
+            @inproceedings{abdelali2015-INTERSPEECH,
+              title={{QAT}$^2$--The {QCRI} Advanced Transcription and Translation System},
+              author={Abdelali, Ahmed and Ali, Ahmed and Guzm{\'a}n, Francisco and Stahlberg, Felix and Vogel, Stephan and Zhang, Yifan},
+              booktitle={ Proceedings of the 16th Annual Conference of the International Speech Communication Association},
+              year={2015},
+              abstract={QAT2 is a multimedia content translation web service developed by QCRI to help content provider to reach audiences and viewers speaking different languages. It is built with  open source technologies such as KALDI, Moses and MaryTTS, to provide a complete translation experience for web users. It translates text content in its original format, and pro- duce translated videos with speech-to-speech translation. The result is a complete native language experience for end users on foreign language websites. The system currently supports translation from Arabic to English.}
+            }
 
 
     -
         layout: paper
-        toappear: yes
+        toappear: no
         paper-type: inproceedings
         year: 2015
         selected: no
@@ -631,11 +674,61 @@
             Analyzing Optimization for Statistical Machine 
             Translation: MERT Learns Verbosity, PRO Learns Length
         authors: Francisco Guzmán, Preslav Nakov, Stephan Vogel
-        img: inpress
+        img: CONLL2015-Guzman
         venue: conference
-        doc-url:  
-        pages: 
-        slides:
-        booktitle-url:  
-        booktitle: Proceedings of CoNLL 2015 
+        doc-url: papers/CONLL2015-Guzman.pdf
+        pages: 62-72
+        slides: media/CONLL2015-Guzman.pdf
+        booktitle-url:  http://www.conll.org/2015
+        booktitle: Proceedings of the Nineteenth Conference on Computational Natural Language Learning (CoNLL)
+        abstract: >
+            We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets.
+            Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.
 
+        bibtex: >
+                  @InProceedings{guzman-nakov-vogel:2015:CoNLL,
+                  author    = {Guzm\'{a}n, Francisco  and  Nakov, Preslav  and  Vogel, Stephan},
+                  title     = {Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length},
+                  booktitle = {Proceedings of the Nineteenth Conference on Computational Natural Language Learning},
+                  month     = {July},
+                  year      = {2015},
+                  address   = {Beijing, China},
+                  publisher = {Association for Computational Linguistics},
+                  pages     = {62--72},
+                  url       = {http://www.aclweb.org/anthology/K15-1007},
+                  abstract = {We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets.
+                    Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.}
+                    }
+
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2015
+        selected: no
+        title: >
+            How do Humans Evaluate Machine Translation
+        authors: Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel
+        img: WMT2015-Guzman
+        venue: conference
+        pages: 457-466
+        booktitle: Proceedings of the Tenth Workshop on Statistical Machine Translation
+        booktitle-url: http://www.statmt.org/wmt15/papers.html
+        doc-url: papers/WMT2015-Guzman.pdf
+        slides: media/WMT2015-Guzman.pptx
+        software: https://github.com/Qatar-Computing-Research-Institute/wmt15eyetracking
+        errata: few typos were corrected in this version
+        abstract: >
+            In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.
+        bibtex: >
+            @inproceedings{guzman-EtAl:2015:WMT,
+             abstract = {In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.},
+             address = {Lisbon, Portugal},
+             author = {Guzm\'{a}n, Francisco  and  Abdelali, Ahmed  and  Temnikova, Irina  and  Sajjad, Hassan  and  Vogel, Stephan},
+             booktitle = {Proceedings of the Tenth Workshop on Statistical Machine Translation},
+             link = {http://aclweb.org/anthology/W15-3059},
+             month = {September},
+             pages = {457--466},
+             publisher = {Association for Computational Linguistics},
+             title = {How do Humans Evaluate Machine Translation},
+             year = {2015}
+            }

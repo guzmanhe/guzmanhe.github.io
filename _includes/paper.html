@@ -43,6 +43,9 @@
         Dissertation, {{ include.paper.institution }}.
     {% endcase %} 
     {{ include.paper.year }}.<br/>
+    {% if include.paper.doc-url %} 
+     <a href="{{ include.paper.doc-url }}" class="label label-success">PDF</a> 
+    {% endif %} 
     {% if include.paper.abstract %}
       <a data-toggle="modal" href="#abstract{{ include.paper.img }}" class="label label-default">Abstract</a>
       <!-- Modal -->
@@ -91,7 +94,7 @@
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal --> 
-       <a data-toggle="modal" href="#errata{{ include.paper.img }}" class="label label-warning">
+       <a data-toggle="modal" href="#errata{{ include.paper.img }}" class="label label-default">
          Errata
       </a>&nbsp;      
     {% endif %}
@@ -103,6 +106,9 @@
     {% endif %}
     {% if include.paper.code %}
       <a href="{{ include.paper.code }}" class="label label-success">Code</a>
+    {% endif %}
+    {% if include.paper.software %}
+      <a href="{{ include.paper.software }}" class="label label-warning">Software/Code</a>
     {% endif %}
   </div>
 </div>
