@@ -2,39 +2,31 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     {% for page in site.pages | remove: 'collaborators.html' %}
     {% if page.sitemap != false %}<url>
-    	{% if site.env == 'alt' %}<loc>http://alt.qcri.org/~guzmanhe{{ page.url }}</loc>
-    	{% else %}<loc>http://guzmanhe.github.io{{ page.url }}</loc>{% endif %}
+    	<loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ page.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
     </url>{% endif %}
     {% endfor %}
     {% for paper in site.data.papers  %}     
-        {% if site.env == 'alt' %}{% if paper.doc-url %}<url>
-        <loc>http://alt.qcri.org/~guzmanhe/{{ paper.doc-url }}</loc>
+        {% if paper.doc-url %}
+        <url>
+        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.doc-url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
-        </url>{% endif %}
-        {% if paper.slides %}<url>
-        <loc>http://alt.qcri.org/~guzmanhe/{{ paper.slides }}</loc>
+        </url>
+        {% endif %}
+        {% if paper.slides %}
+        <url>
+        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.slides }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
-        </url>{% endif %}
-        {% else %}{% if paper.doc-url %}<url><loc>http://guzmanhe.github.io/{{ paper.doc-url }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>weekly</changefreq>
-        </url>{% endif %}
-        {% if paper.slides %}<url>
-        <loc>http://http://guzmanhe.github.io/{{ paper.slides }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>weekly</changefreq>
-    </url>{% endif %} {% endif %}
+        </url>
+        {% endif %}
     {% endfor %}
-
-    </url>
-
 </urlset>
 
 
