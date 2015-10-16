@@ -1,173 +1,40 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in site.pages | remove: 'collaborators.html' %}
+    {% if page.sitemap != false %}<url>
+    	{% if site.env == 'alt' %}<loc>http://alt.qcri.org/~guzmanhe{{ page.url }}</loc>
+    	{% else %}<loc>http://guzmanhe.github.io{{ page.url }}</loc>{% endif %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>{% endif %}
+    {% endfor %}
+    {% for paper in site.data.papers  %}     
+        {% if site.env == 'alt' %}{% if paper.doc-url %}<url>
+        <loc>http://alt.qcri.org/~guzmanhe/{{ paper.doc-url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        </url>{% endif %}
+        {% if paper.slides %}<url>
+        <loc>http://alt.qcri.org/~guzmanhe/{{ paper.slides }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        </url>{% endif %}
+        {% else %}{% if paper.doc-url %}<url><loc>http://guzmanhe.github.io/{{ paper.doc-url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        </url>{% endif %}
+        {% if paper.slides %}<url>
+        <loc>http://http://guzmanhe.github.io/{{ paper.slides }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>{% endif %} {% endif %}
+    {% endfor %}
 
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/index.html</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers.html</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/mentoring.html</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/cv.html</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/pokerface.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/EMNLP2014-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/EMNLP2014-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/ACL2014-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/ACL2014-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/IWSLT2013-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/IWSLT2013-Guzman.pptx</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/ACL2013_Short-Nakov.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/ACL2013-Nakov.pptx</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/COLING2012-Nakov.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/COLING2012-Nakov.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/GALEBOOK2011-Guzman-first.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/MTSummit2009-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/MTSUMMIT2009-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/LREC2014-Abdelali.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/LREC2014-Abdelali.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/HCII2014-Jansen.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/WMT2014-Joty.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/WMT2014-Joty.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/RANLP2013-Nakov.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/RANLP2013-Nakov.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/IWSLT2013-Sajjad.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/IWSLT2013-Sajjad.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/WMT2012-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/WMT2012-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/COLING2012-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/Thesis2011-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/Thesis2011-Guzman.pptx</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/CICLING2008-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/CICLING2008-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/MICAI2007-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/MICAI2007-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/papers/SMC2005-Guzman.pdf</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/SMC2005-Guzman.ppt</loc>
-  <lastmod>2015-04-12T21:57:20+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/TII-TransTech-2015-v4.pptx</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://alt.qcri.org/~guzmanhe/media/TOrizaba-2009.pdf</loc>
-  <lastmod>2015-04-12T21:57:19+00:00</lastmod>
-</url>
+    </url>
+
 </urlset>
+
+
