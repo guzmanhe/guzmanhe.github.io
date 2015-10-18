@@ -1,34 +1,60 @@
 ---
 layout: default
-title: Paco Guzman
+title: Francisco (Paco) Guzmán
 picture: paco
-     
+
+name: Francisco (Paco) Guzmán
+
+scholar: 
+  id: eEBT0BAAAAAJ
+
+twitter:
+  id: guzmanhe
+  widget: 587238060623929344
+
+github:
+  id: guzmanhe
+
+work:
+  title: Scientist
+  email: fguzman _at_ qf _dot_ org _dot_ qa
+  group:
+    url: http://qcri.com/our-research/arabic-language-technologies/arabic-language-technologies/  
+    name: Arabic Language Technologies
+
+  department:
+    url: http://qcri.com/
+    name: Qatar Computing Research Institute, HBKU
+
+  company:
+    url: http://qf.org.qa
+    name: Qatar Foundation
 ---
 
 <div class="page-header">
   <div class="row">
     <div class="col-sm-12">
-      <h3>Francisco (Paco) Guzmán</h3>
+      <h3>{{ page.title }} </h3>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-6">
       <address>
-        Scientist<br/>
-        <a href="http://qcri.com/our-research/arabic-language-technologies/arabic-language-technologies/">Arabic Language Technologies</a><br/>
-        <a href="http://qcri.com/">Qatar Computing Research Institute</a><br/>
-        <a href="http://qf.org.qa">Qatar Foundation</a><br/>
+        {{ page.work.title }}<br/>
+        <a href="{{ page.work.group.url }}">{{ page.work.group.name }}</a><br/>
+        <a href="{{ page.work.department.url }}">{{ page.work.department.name}}</a><br/>
+        <a href="{{ page.work.company.url }}">{{ page.work.company.name }}</a><br/>
       </address>
     </div>
     <div class="col-sm-4">
-      <a href="mailto:fguzman@qf.org.qa"><span class="glyphicon glyphicon-envelope"></span></a> Email<br/>
+      <a href="mailto:{{ page.work.email }}"><span class="glyphicon glyphicon-envelope"></span></a> Email<br/>
       <!--<a href="tel:+44-1316504430"><span class="glyphicon glyphicon-phone"></span>+44 131 650 4430</a><br/>-->
-      <a href="http://scholar.google.com/citations?user=eEBT0BAAAAAJ">
+      {% if page.scholar.id %}<a href="http://scholar.google.com/citations?user={{ page.scholar.id }}">
         <img src="img/ico/gs.png" alt=""/>
-      </a> Google Scholar<br/>
-      <a href="http://github.com/guzmanhe">
+      </a> Google Scholar<br/>{% endif %}
+      {% if page.github.id %} <a href="http://github.com/{{ page.github.id }}">
         <img src="img/ico/github_icon.png" alt=""/>
-      </a> Github
+      </a> Github {% endif %}
 
     </div>
   </div>
@@ -44,16 +70,16 @@ picture: paco
 <div class="col-sm-8">
 
 <ul class="list-group">
-{% for item in site.data.news %}
+{% for item in site.data.news  limit: 8 %}
    <li class="list-group-item"><span class="badge" >{{item.date | date: "%-d %b %y"}}</span><span>{{ item.text }}</span></li>
 {% endfor %}
 </ul>
 </div>
-<div class="col-sm-4" style="outline: 1px solid #5E472D;">
+{% if page.twitter.id %}<div class="col-sm-4" style="outline: 1px solid #5E472D;">
   <a class="twitter-timeline" width="300" data-theme="light"
   data-link-color="#5E472D"
-  height="500" href="https://twitter.com/guzmanhe" data-widget-id="587238060623929344">Tweets by @guzmanhe</a>
-</div>
+  height="500" href="https://twitter.com/{{ page.twitter.id }}" data-widget-id="{{ page.twitter.widget }}">Tweets by @{{ page.twitter.id }}</a>
+</div>{% endif %}
 </div>
 
 <h4>Selected Papers</h4>
