@@ -26,7 +26,7 @@ picture: paco
 {% for talk in year.items %}
 <div class="media">
   <a class="pull-left thumbnail" {%if talk.url %} href="{{ talk.url }}" {% endif %}>
-    <img class="media-object" src="img/talk/{{ talk.img }}.jpg" alt="">
+    <img class="media-object" src="{{site.deploy}}/img/talk/{{ talk.img }}.jpg" alt="">
   </a>
   <div class="media-body" id="{{talk.img}}">
     <strong>{{ talk.title }}</strong><br/>

@@ -1,7 +1,7 @@
 <div class="media" {% if include.paper.selected %} style="background-color: #E1E0DD" {% endif %}>
   <a class="pull-left thumbnail" {% if include.paper.doc-url %} href="{{ include.paper.doc-url }}" {% endif %}>
     {% if include.paper.img %}
-    <img src="/img/paper/{{ include.paper.img }}.jpg" alt=""/>
+    <img src="{{site.deploy}}/img/paper/{{ include.paper.img }}.jpg" alt=""/>
     {% endif %}
   </a>
   <div class="media-body"  >
@@ -44,7 +44,7 @@
     {% endcase %} 
     {{ include.paper.year }}.<br/>
     {% if include.paper.doc-url %} 
-     <a href="{{ include.paper.doc-url }}" class="label label-success">PDF</a> 
+     <a href="{{site.deploy}}/{{ include.paper.doc-url }}" class="label label-success">PDF</a> 
     {% endif %} 
     {% if include.paper.abstract %}
       <a data-toggle="modal" href="#abstract{{ include.paper.img }}" class="label label-default">Abstract</a>
@@ -99,7 +99,7 @@
       </a>&nbsp;      
     {% endif %}
     {% if include.paper.slides %} 
-      <a href="{{ include.paper.slides }}" class="label label-info">Slides</a> 
+      <a href="{{site.deploy}}/{{ include.paper.slides }}" class="label label-info">Slides</a> 
     {% endif %}
     {% if include.paper.latex %}
       <a href="{{ include.paper.latex }}" class="label label-danger">\( \LaTeX \)</a>

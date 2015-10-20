@@ -6,14 +6,14 @@ layout: null
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     {% for page in site.pages | remove: 'collaborators.html' %}
     {% if page.sitemap != false %}<url>
-    	<loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ page.url }}</loc>
+    	<loc>{{site.deploy}}/{{ page.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
     </url>{% endif %}
     {% endfor %}
     {% for paper in site.papers  %}     
         <url>
-        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.url }}</loc>
+        <loc>{{site.deploy}}/{{ paper.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         </url>
@@ -21,14 +21,14 @@ layout: null
     {% for paper in site.data.papers  %}     
         {% if paper.doc-url %}
         <url>
-        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.doc-url }}</loc>
+        <loc>{{site.deploy}}/{{ paper.doc-url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         </url>
         {% endif %}
         {% if paper.slides %}
         <url>
-        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.slides }}</loc>
+        <loc>{{site.deploy}}/{{ paper.slides }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         </url>
