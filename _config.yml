@@ -6,3 +6,4 @@ collections:
     output: true
   papers:
     output: true
+deploy: "https://guzmanhe.github.io/"
