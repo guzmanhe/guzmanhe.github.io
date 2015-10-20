@@ -1,0 +1,60 @@
+---
+abstract: 'We study the impact of source length and verbosity of the tuning dataset
+  on the performance of parameter optimizers such as MERT and PRO for statistical
+  machine translation. In particular, we test whether the verbosity of the resulting
+  translations can be modified by varying the length or the verbosity of the tuning
+  sentences. We find that MERT learns the tuning set verbosity very well, while PRO
+  is sensitive to both the verbosity and the length of the source sentences in the
+  tuning set; yet, overall PRO learns best from high-verbosity tuning datasets. Given
+  these dependencies, and potentially some other such as amount of reordering, number
+  of unknown words, syntactic complexity, and evaluation measure, to mention just
+  a few, we argue for the need of controlled evaluation scenarios, so that the selection
+  of tuning set and optimization strategy does not overshadow scientific advances
+  in modeling or decoding. In the mean time, until we develop such controlled scenarios,
+  we recommend using PRO with a large verbosity tuning set, which, in our experiments,
+  yields highest BLEU across datasets and language pairs.
+
+  '
+authors: Francisco Guzmán, Preslav Nakov, Stephan Vogel
+bibtex: "@InProceedings{guzman-nakov-vogel:2015:CoNLL, author    = {Guzm\\'{a}n, Francisco\
+  \  and  Nakov, Preslav  and  Vogel, Stephan}, title     = {Analyzing Optimization\
+  \ for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length},\
+  \ booktitle = {Proceedings of the Nineteenth Conference on Computational Natural\
+  \ Language Learning}, month     = {July}, year      = {2015}, address   = {Beijing,\
+  \ China}, publisher = {Association for Computational Linguistics}, pages     = {62--72},\
+  \ url       = {http://www.aclweb.org/anthology/K15-1007}, abstract = {We study the\
+  \ impact of source length and verbosity of the tuning dataset on the performance\
+  \ of parameter optimizers such as MERT and PRO for statistical machine translation.\
+  \ In particular, we test whether the verbosity of the resulting translations can\
+  \ be modified by varying the length or the verbosity of the tuning sentences. We\
+  \ find that MERT learns the tuning set verbosity very well, while PRO is sensitive\
+  \ to both the verbosity and the length of the source sentences in the tuning set;\
+  \ yet, overall PRO learns best from high-verbosity tuning datasets.\n  Given these\
+  \ dependencies, and potentially some other such as amount of reordering, number\
+  \ of unknown words, syntactic complexity, and evaluation measure, to mention just\
+  \ a few, we argue for the need of controlled evaluation scenarios, so that the selection\
+  \ of tuning set and optimization strategy does not overshadow scientific advances\
+  \ in modeling or decoding. In the mean time, until we develop such controlled scenarios,\
+  \ we recommend using PRO with a large verbosity tuning set, which, in our experiments,\
+  \ yields highest BLEU across datasets and language pairs.}\n  }\n"
+booktitle: Proceedings of the Nineteenth Conference on Computational Natural Language
+  Learning (CoNLL)
+booktitle-url: http://www.conll.org/2015
+doc-url: papers/CONLL2015-Guzman.pdf
+img: CONLL2015-Guzman
+layout: singlepaper
+pages: 62-72
+paper-type: inproceedings
+picture: paco
+selected: false
+slides: media/CONLL2015-Guzman.pdf
+title: 'Analyzing Optimization for Statistical Machine  Translation: MERT Learns Verbosity,
+  PRO Learns Length
+
+  '
+toappear: false
+venue: conference
+year: 2015
+---
+
+{% include singlepaper.html paper=page %}

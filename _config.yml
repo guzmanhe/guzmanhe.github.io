@@ -1,3 +1,8 @@
 exclude: ['README.md']
 timezone: US/Eastern
 markdown: kramdown
+collections:
+  projects:
+    output: true
+  papers:
+    output: true

@@ -11,6 +11,13 @@ layout: null
         <changefreq>weekly</changefreq>
     </url>{% endif %}
     {% endfor %}
+    {% for paper in site.papers  %}     
+        <url>
+        <loc>{% if site.env == 'alt' %}http://alt.qcri.org/~guzmanhe/{% else %}http://guzmanhe.github.io/{% endif%}{{ paper.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        </url>
+    {% endfor %}
     {% for paper in site.data.papers  %}     
         {% if paper.doc-url %}
         <url>

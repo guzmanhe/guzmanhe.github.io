@@ -1,0 +1,55 @@
+---
+abstract: 'We study a problem with pairwise ranking optimization (PRO): that it tends
+  to yield too short translations. We find that this is partially due to the inadequate
+  smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves
+  the brevity penalty unchanged, thus destroying the balance between the two, compared
+  to BLEU. It is also partially due to PRO optimizing for a sentence-level score without
+  a global view on the overall length, which introducing a bias towards short translations;
+  we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally,
+  we find some residual bias due to the interaction of PRO with BLEU+1: such a bias
+  does not exist for a version of MIRA with sentence-level BLEU+1. We propose several
+  ways to fix the length problem of PRO, including smoothing the brevity penalty,
+  scaling the effective reference length, grounding the precision component, and unclipping
+  the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English
+  datasets: IWSLT (+0.65) and NIST (+0.37).
+
+  '
+authors: Preslav Nakov, Francisco Guzmán, and Stephan Vogel
+bibtex: "@inproceedings{nakov-guzman-vogel:2012:PAPERS,\n  author    = {Nakov, Preslav\
+  \  and  Guzm{\\'a}n, Francisco  and  Vogel, Stephan},\n  title     = {Optimizing\
+  \ for Sentence-Level {BLEU}+1 Yields Short Translations},\n  booktitle = {Proceedings\
+  \ of the 24rd International Conference on Computational Linguistics (COLING) 2012\
+  \ },\n  month     = {December},\n  year      = {2012},\n  address   = {Mumbai, India},\n\
+  \  publisher = {The {COLING} 2012 Organizing Committee},\n  pages     = {1979--1994},\n\
+  \  url       = {http://www.aclweb.org/anthology/C12-1121},\n  abstract = {We study\
+  \ a problem with pairwise ranking optimization (PRO): that it tends to yield too\
+  \ short translations. We find that this is partially due to the inadequate smoothing\
+  \ in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity\
+  \ penalty unchanged, thus destroying the balance between the two, compared to BLEU.\
+  \ It is also partially due to PRO optimizing for a sentence-level score without\
+  \ a global view on the overall length, which introducing a bias towards short translations;\
+  \ we show that letting PRO optimize a corpus-level BLEU yields a perfect length.\
+  \ Finally, we find some residual bias due to the interaction of PRO with BLEU+1:\
+  \ such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We\
+  \ propose several ways to fix the length problem of PRO, including smoothing the\
+  \ brevity penalty, scaling the effective reference length, grounding the precision\
+  \ component, and unclipping the brevity penalty, which yield sizable improvements\
+  \ in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).}\n\
+  \    }\n"
+booktitle: Proceedings of the 24rd International Conference on Computational Linguistics
+  (COLING 2012)
+booktitle-url: http://aclweb.org/portal/content/24th-international-conference-computational-linguistics
+doc-url: papers/COLING2012-Nakov.pdf
+img: COLING2012-Nakov
+layout: singlepaper
+pages: 1979–1994
+paper-type: inproceedings
+picture: paco
+selected: true
+slides: media/COLING2012-Nakov.pdf
+title: Optimizing for Sentence-Level BLEU+1 Yields Short Translations
+venue: conference
+year: 2012
+---
+
+{% include singlepaper.html paper=page %}
