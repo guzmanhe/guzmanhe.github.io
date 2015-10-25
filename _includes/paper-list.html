@@ -1,6 +1,6 @@
 <h5>{{ include.heading }}</h5>
 <ul>
-  {%assign papers= site.data.papers | sort: "year" | reverse  %}
+  {%assign papers= site.papers | sort: "year" | reverse  %}
   {% for paper in papers %}
     {% if paper.venue == include.venue %}
       <li>

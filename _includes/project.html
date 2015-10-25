@@ -41,7 +41,7 @@
 
 <h4> Related Publications </h4>
 <div class="container">
-{%assign papers= site.data.papers | sort: "year" | reverse  %}
+{%assign papers= site.papers | sort: "year" | reverse  %}
 {% for post in papers %}
   {% for paper in include.project.papers %}
     {% if post.img == paper.id %}

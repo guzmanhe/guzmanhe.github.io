@@ -1,9 +1,28 @@
 exclude: ['README.md']
 timezone: US/Eastern
-markdown: kramdown
+markdown: pandoc
+gems:
+  - jekyll-pandoc
+  
 collections:
   projects:
     output: true
   papers:
     output: true
+  cv:
+    output: true 
+
 deploy: "https://guzmanhe.github.io/"
+
+#gems:
+#  - jekyll-pandoc
+
+pandoc:
+  format: html5
+  extensions:
+    - normalize
+    - smart
+    - mathjax
+    - css: ../css/cv.css
+    - csl: _styles/acl.csl
+    - bibliography: papers/bibtex.bib
