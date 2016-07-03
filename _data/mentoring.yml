@@ -1,15 +1,23 @@
 
-current-projects:
+#current-projects:
+#
+past-projects:
+    - 
+        title: Computer Assisted Learning for Arabic Speaking ESL Students. 
+        detail: In this senior thesis project, we explored the challenges of using machine translated subtitles in a learning environment.
+        duration: 9 months
+        img: pokerface
+        year: 2016
+        interns: Alaa Khader
+        outcomes: Alaa's Senior Thesis
     - 
         title: Word Emotion Detector
-        detail: We will explore the use of consumer-level eyetracking, face emotion detection, and electroencephalography technologies to detect the user's reactions to written text.
+        detail: We explored the use of consumer-level eyetracking, face emotion detection, and electroencephalography technologies to detect the user reactions to written text.
         duration: 8 weeks
         img: pokerface
         year: 2015
-        interns: <i> Application process open </i>
-        outcomes:
-
-past-projects:
+        interns: Alaa Khader, Ashwini Kamath, Harsh Sharma, Juan Sam, Olympia Datta.
+        outcomes: Poster at QF Annual Research Conference 2016
     -
         title: Clustered Optimization for SMT
         detail: We explored the use of clustering techniques during MT optimization to produce better parameter estimation.
@@ -32,7 +40,7 @@ past-projects:
         duration: 3 months
         img: madar
         year: 2013
-        interns: Baljit Singh (CMUQ), 
+        interns: Baljit Singh (CMUQ)
         outcomes: An application (Madar Huruf) released into the Apple AppStore.
     -
         title: Arabia - Arabic Language Learning iOS App

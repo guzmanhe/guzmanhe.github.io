@@ -9,7 +9,7 @@
       {% else %}
         Francisco Guzman.
       {% endif %}
-      {{ paper.year }}. 
+      
       {{ paper.title }}. 
       In
       {% case paper.paper-type %}
@@ -24,6 +24,7 @@
         {% when "techreport" %}
             <i>{{ paper.journal }}.</i>
       {% endcase %}
+      {{ paper.year }}. 
       </li>
     {% endif %}
   {% endfor %}

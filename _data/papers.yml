@@ -732,3 +732,65 @@
              title = {How do Humans Evaluate Machine Translation},
              year = {2015}
             }
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2016
+        selected: yes
+        title: >
+            Eyes Don't Lie: Predicting Machine Translation Quality Using Eye Movement
+        authors:  Hassan Sajjad, Francisco Guzmán, Nadir Durrani, Ahmed Abdelali, Houda Bouamor, Irina Temnikova, and Stephan Vogel
+        img: WMT2015-Guzman
+        venue: conference
+        pages: 1082-1088
+        booktitle: >
+            Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
+        booktitle-url: http://aclweb.org/anthology/N/N16/
+        doc-url: papers/NAACL2016-Sajjad.pdf
+        slides: media/NAACL2016-Sajjad.pdf
+        software: https://github.com/Qatar-Computing-Research-Institute/iAppraise
+        abstract: >
+            In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.
+        bibtex: >
+            @InProceedings{sajjad-EtAl:2016:N16-1,
+              author    = {Sajjad, Hassan  and  Guzm\'{a}n, Francisco  and  Durrani, Nadir  and  Abdelali, Ahmed  and  Bouamor, Houda  and  Temnikova, Irina  and  Vogel, Stephan},
+              title     = {Eyes Don't Lie: Predicting Machine Translation Quality Using Eye Movement},
+              booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+              month     = {June},
+              year      = {2016},
+              address   = {San Diego, California},
+              publisher = {Association for Computational Linguistics},
+              pages     = {1082--1088},
+              url       = {http://www.aclweb.org/anthology/N16-1125}
+            }
+    -
+        layout: paper
+        paper-type: inproceedings
+        year: 2016
+        selected: no
+        title: >
+            iAppraise: A Manual Machine Translation Evaluation Environment Supporting Eye-tracking
+        authors: Ahmed Abdelali, Nadir Durrani, and Francisco Guzmán
+        img: WMT2015-Guzman
+        venue: conference
+        pages: 17-21
+        booktitle: >
+            Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations
+
+        booktitle-url: http://aclweb.org/anthology/N/N16/
+        doc-url: papers/NAACL2016-Abdelali.pdf
+        slides: media/NAACL2016-Abdelali.pdf
+        software: https://github.com/Qatar-Computing-Research-Institute/iAppraise
+        bibtex: >
+            @inproceedings{abdelali-durrani-guzman:2016:N16-3,
+             address = {San Diego, California},
+             author = {Abdelali, Ahmed  and  Durrani, Nadir  and  Guzm\'{a}n, Francisco},
+             booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations},
+             link = {http://www.aclweb.org/anthology/N16-3004},
+             month = {June},
+             pages = {17--21},
+             publisher = {Association for Computational Linguistics},
+             title = {iAppraise: A Manual Machine Translation Evaluation Environment Supporting Eye-tracking},
+             year = {2016}
+            }
+
