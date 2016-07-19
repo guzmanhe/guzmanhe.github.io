@@ -1,6 +1,8 @@
 #!/bin/python
 import simpleyaml as yaml
 import codecs
+import sys
+import os
 # -*- coding: utf-8 -*-
 from simpleyaml import Loader, SafeLoader
 
@@ -8,10 +10,11 @@ from simpleyaml import Loader, SafeLoader
 def main(file):
 	stream = open(file, "r")
 	docs = yaml.load(stream)
+	dirname = os.path.dirname(sys.argv[0])
 	for doc in docs:
-		id=doc['img']
+		id=doc['id']
 		
-		newfile=open("../_papers/"+id+".html","w")
+		newfile=open(dirname+"/../_papers/"+id+".html","w")
 		#for item in doc.
 		doc['layout']='singlepaper'
 		doc['picture']='paco'
@@ -27,4 +30,7 @@ def main(file):
 		
 
 if __name__ == '__main__':
-	main("../_data/papers.yml")
+	if len(sys.argv) >1:
+		main(sys.argv[1])
+	else:
+		main("../_data/papers.yml")

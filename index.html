@@ -9,7 +9,7 @@ scholar:
   id: eEBT0BAAAAAJ
 
 twitter:
-  id: guzmanhe
+#  id: guzmanhe
   widget: 587238060623929344
 
 github:
@@ -84,7 +84,7 @@ work:
 
 <h4>Selected Papers</h4>
 
-{%assign papers= site.papers | sort: "year" | reverse  %}
+{%assign papers= site.data.papers | sort: "year" | reverse  %}
 {% for post in papers %}
   {% if post.selected %}
     {% include paper.html paper=post %}

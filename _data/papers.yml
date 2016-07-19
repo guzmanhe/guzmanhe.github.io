@@ -1,18 +1,21 @@
     -
         layout: paper
-        paper-type: inproceedings
+        paper-type: inproceedings #changes display of reference in paper list
         year: 2015
-        selected: no
+        selected: yes #yes/no
         title: >
             Pairwise Neural Machine Translation Evaluation
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
-        img: 
-        venue: 
+        id: PAMACLTIJCAFNLPACL2015_Guzman
+        img: #image_id to be found in img/paper/ID.jpg
+        slides: # e.g. media/$ID.pptx 
+        code: #e.g. github.com/project
+        errata: #if you have errata, insert here
+        venue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport
         pages: 805-814
         booktitle: >
-            Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
-Federation of Natural Language Processing (ACL'15)
-        doc-url: 
+            Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian Federation of Natural Language Processing (ACL'15)
+        doc-url: http://www.aclweb.org/anthology/P15-1078
         abstract: >
             We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
         bibtex: >
@@ -33,21 +36,24 @@ Federation of Natural Language Processing (ACL'15)
             
     -
         layout: paper
-        paper-type: inproceedings
+        paper-type: inproceedings #changes display of reference in paper list
         year: 2015
-        selected: no
+        selected: no #yes/no
         title: >
             Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length
         authors: Francisco Guzmán, Preslav Nakov, and Stephan Vogel
-        img: 
-        venue: 
+        id: PNCCNLL2015_Guzman
+        img: #image_id to be found in img/paper/ID.jpg
+        slides: # e.g. media/$ID.pptx 
+        code: #e.g. github.com/project
+        errata: #if you have errata, insert here
+        venue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport
         pages: 62-72
         booktitle: >
             Proceedings of the Nineteenth Conference on Computational Natural Language Learning
-        doc-url: 
+        doc-url: http://www.aclweb.org/anthology/K15-1007
         abstract: >
-            We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets.
-Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.
+            We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets. Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.
         bibtex: >
             @inproceedings{guzman-nakov-vogel:2015:CoNLL,
              abstract = {We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets.
@@ -66,18 +72,22 @@ Given these dependencies, and potentially some other such as amount of reorderin
             
     -
         layout: paper
-        paper-type: inproceedings
+        paper-type: inproceedings #changes display of reference in paper list
         year: 2015
-        selected: no
+        selected: no #yes/no
         title: >
             How do Humans Evaluate Machine Translation
         authors: Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel
-        img: 
-        venue: 
+        id: PTWSMT2015_Guzman
+        img: #image_id to be found in img/paper/ID.jpg
+        slides: # e.g. media/$ID.pptx 
+        code: #e.g. github.com/project
+        errata: #if you have errata, insert here
+        venue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport
         pages: 457-466
         booktitle: >
             Proceedings of the Tenth Workshop on Statistical Machine Translation
-        doc-url: 
+        doc-url: http://aclweb.org/anthology/W15-3059
         abstract: >
             In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.
         bibtex: >
@@ -97,18 +107,22 @@ Given these dependencies, and potentially some other such as amount of reorderin
             
     -
         layout: paper
-        paper-type: inproceedings
+        paper-type: inproceedings #changes display of reference in paper list
         year: 2016
-        selected: no
+        selected: yes #yes/no
         title: >
             Eyes Don't Lie: Predicting Machine Translation Quality Using Eye Movement
         authors: Hassan Sajjad, Francisco Guzmán, Nadir Durrani, Ahmed Abdelali, Houda Bouamor, Irina Temnikova, and Stephan Vogel
-        img: 
-        venue: 
+        id: PCNACACLHLT2016_Sajjad
+        img: #image_id to be found in img/paper/ID.jpg
+        slides: # e.g. media/$ID.pptx 
+        code: #e.g. github.com/project
+        errata: #if you have errata, insert here
+        venue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport
         pages: 1082-1088
         booktitle: >
             Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
-        doc-url: 
+        doc-url: http://www.aclweb.org/anthology/N16-1125
         bibtex: >
             @inproceedings{sajjad-EtAl:2016:N16-1,
              address = {San Diego, California},
@@ -125,18 +139,22 @@ Given these dependencies, and potentially some other such as amount of reorderin
             
     -
         layout: paper
-        paper-type: inproceedings
+        paper-type: inproceedings #changes display of reference in paper list
         year: 2016
-        selected: no
+        selected: no #yes/no
         title: >
             iAppraise: A Manual Machine Translation Evaluation Environment Supporting Eye-tracking
         authors: Ahmed Abdelali, Nadir Durrani, and Francisco Guzmán
-        img: 
-        venue: 
+        id: PCNACACLD2016_Abdelali
+        img: #image_id to be found in img/paper/ID.jpg
+        slides: # e.g. media/$ID.pptx 
+        code: #e.g. github.com/project
+        errata: #if you have errata, insert here
+        venue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport
         pages: 17-21
         booktitle: >
             Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations
-        doc-url: 
+        doc-url: http://www.aclweb.org/anthology/N16-3004
         bibtex: >
             @inproceedings{abdelali-durrani-guzman:2016:N16-3,
              address = {San Diego, California},
