@@ -5,8 +5,8 @@
         year: 2005
         id: SMC2005-Guzman
         img: SMC2005-Guzman
-        doc-url: papers/SMC2005-Guzman.pdf
-        slides: media/SMC2005-Guzman.ppt
+        doc-url: /papers/SMC2005-Guzman.pdf
+        slides: /media/SMC2005-Guzman.ppt
         title: > 
             Towards Traffic Light Control Through a Cooperative Multiagent System: A Simulation-Based Study
         booktitle: Proceedings of the 2005 Agent-Directed Simulation Symposium (ADS05) at the 2005 Spring Simulation Multiconference (SpringSim'05)
@@ -59,8 +59,8 @@
         booktitle: Sixth Mexican International Conference on Artificial Intelligence (MICAI-07)
         booktitle-url: http://www.micai.org/2007/
         authors: Francisco Guzmán, and Leonardo Garrido
-        doc-url: papers/MICAI2007-Guzman.pdf
-        slides: media/MICAI2007-Guzman.pdf
+        doc-url: /papers/MICAI2007-Guzman.pdf
+        slides: /media/MICAI2007-Guzman.pdf
         id: MICAI2007-Guzman
         img: MICAI2007-Guzman
         venue: conference
@@ -88,9 +88,9 @@
         booktitle-url: http://www.cicling.org/2008/
         id: CICLING2008-Guzman
         img: CICLING2008-Guzman
-        doc-url: papers/CICLING2008-Guzman.pdf
+        doc-url: /papers/CICLING2008-Guzman.pdf
         authors: Francisco Guzmán, and Leonardo Garrido
-        slides: media/CICLING2008-Guzman.pdf
+        slides: /media/CICLING2008-Guzman.pdf
         venue: conference
         year: 2008
         pages: 388-398
@@ -117,10 +117,10 @@
         id: MTSummit2009-Guzman
         img: MTSummit2009-Guzman
         title: Reassessment of the role of phrase extraction in pbsmt
-        doc-url: papers/MTSummit2009-Guzman.pdf
+        doc-url: /papers/MTSummit2009-Guzman.pdf
         authors: Francisco Guzmán, Qin Gao and Stephan Vogel
         booktitle: Machine Translation Summit XII
-        slides: media/MTSUMMIT2009-Guzman.pdf
+        slides: /media/MTSUMMIT2009-Guzman.pdf
         booktitle-url: http://http://summitxii.amtaweb.org/
         venue: conference
         abstract: > 
@@ -146,7 +146,7 @@
         booktitle-url: http://aclanthology.info/events/coling-2010
         title: >
             EMDC: a semi-supervised approach for word alignment
-        doc-url: papers/COLING2010-Gao.pdf
+        doc-url: /papers/COLING2010-Gao.pdf
         id: COLING2010-Gao
         img: COLING2010-Gao
         pages: 349-357
@@ -171,7 +171,7 @@
         selected: yes
         title: Word Alignment Revisited
         authors: Francisco Guzmán, Qin Gao, Jan Niehues, and Stephan Vogel
-        doc-url: papers/GALEBOOK2011-Guzman-first.pdf
+        doc-url: /papers/GALEBOOK2011-Guzman-first.pdf
         id: GALEBOOK2011-Guzman
         img: GALEBOOK2011-Guzman
         pages: 164-175
@@ -200,8 +200,8 @@
         id: Thesis2011-Guzman
         img: Thesis2011-Guzman
         venue: thesis
-        doc-url: papers/Thesis2011-Guzman.pdf
-        slides: media/Thesis2011-Guzman.pptx
+        doc-url: /papers/Thesis2011-Guzman.pdf
+        slides: /media/Thesis2011-Guzman.pptx
         abstract: >
             Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be    controlled by modifying word alignment’s characteristics.
             In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited.
@@ -225,8 +225,8 @@
             QCRI at WMT12: Experiments in Spanish-English and German-English Machine Translation of News Text
         authors: Francisco Guzmán, Preslav Nakov, Ahmed Thabet, and Stephan Vogel
         pages: 298-303
-        doc-url: papers/WMT2012-Guzman.pdf
-        slides: media/WMT2012-Guzman.pdf
+        doc-url: /papers/WMT2012-Guzman.pdf
+        slides: /media/WMT2012-Guzman.pdf
         booktitle: Proceedings of the Seventh Workshop on Statistical Machine Translation (WMT'12)
         booktitle-url: http://www.statmt.org/wmt12/
         id: WMT2012-Guzman
@@ -256,9 +256,9 @@
         id: COLING2012-Nakov
         img: COLING2012-Nakov
         title: Optimizing for Sentence-Level BLEU+1 Yields Short Translations
-        doc-url: papers/COLING2012-Nakov.pdf
+        doc-url: /papers/COLING2012-Nakov.pdf
         authors: Preslav Nakov, Francisco Guzmán, and Stephan Vogel
-        slides: media/COLING2012-Nakov.pdf
+        slides: /media/COLING2012-Nakov.pdf
         booktitle: Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)
         booktitle-url: http://aclweb.org/portal/content/24th-international-conference-computational-linguistics
         venue: conference
@@ -286,8 +286,8 @@
         title: >
             Understanding the Performance of Statistical MT Systems: A Linear Regression Framework
         authors: Francisco Guzmán, and  Stephan Vogel
-        doc-url: papers/COLING2012-Guzman.pdf
-        media: media/COLING2012-Guzman.ppt
+        doc-url: /papers/COLING2012-Guzman.pdf
+        media: /media/COLING2012-Guzman.ppt
         id: COLING2012-Guzman
         img: COLING2012-Guzman
         booktitle: Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)
@@ -321,9 +321,9 @@
         venue: conference
         pages: 12-17
         booktitle: Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (ACL'13)
-        slides: media/ACL2013-Nakov.pptx
+        slides: /media/ACL2013-Nakov.pptx
         booktitle-url: http://acl2013.org/
-        doc-url: papers/ACL2013_Short-Nakov.pdf
+        doc-url: /papers/ACL2013_Short-Nakov.pdf
         abstract: >
             While experimenting with tuning on long sentences, we made an unexpected discovery: that PRO falls victim to monsters -overly long negative examples with very low BLEU+1 scores, which are unsuitable for learning and can cause testing BLEU to drop by several points absolute. We propose several effective ways to address the problem, using length- and BLEU+1- based cut-offs, outlier filters, stochastic sampling, and random acceptance. The best of these fixes not only slay and protect against monsters, but also yield higher stability for PRO as well as improved test-time BLEU scores. Thus, we recommend them to anybody using PRO, monster-believer or not.
         bibtex: >
@@ -350,11 +350,11 @@
         authors: Preslav Nakov, Fahad Al Obaidli, Francisco Guzmán, and Stephan Vogel
         id: RANLP2013-Nakov
         img: RANLP2013-Nakov
-        slides: media/RANLP2013-Nakov.pdf
+        slides: /media/RANLP2013-Nakov.pdf
         venue: conference
         booktitle: Proceedings of the International Conference Recent Advances in Natural Language Processing (RANLP'13)
         booktitle-url: http://lml.bas.bg/ranlp2013
-        doc-url: papers/RANLP2013-Nakov.pdf
+        doc-url: /papers/RANLP2013-Nakov.pdf
         abstract: >
             Research on statistical machine translation has focused on particular translation directions, typically with English as the target language, e.g., from Arabic to English. When we reverse the translation direction, the multiple reference translations turn into multiple possible inputs, which offers both challenges and opportunities. We propose and evaluate several strategies for making use of these multiple inputs: (a) select one of the datasets, (b) select the best input for each sentence, and (c) synthesize an input for each sentence by fusing the available inputs. Surprisingly, we find out that it is best to tune on the hardest available input, not on the one that yields the highest BLEU score. This finding has implications on how to pick good translators and how to select useful data for parameter optimization in SMT.
         bibtex: >
@@ -380,9 +380,9 @@
         img: IWSLT2013-Sajjad
         venue: workshop
         booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
-        slides: media/IWSLT2013-Sajjad.pdf
+        slides: /media/IWSLT2013-Sajjad.pdf
         booktitle-url: http://workshop2013.iwslt.org/
-        doc-url: papers/IWSLT2013-Sajjad.pdf
+        doc-url: /papers/IWSLT2013-Sajjad.pdf
         abstract: >
             We describe the Arabic-English and English-Arabic statistical machine translation systems developed by the Qatar Computing Research Institute for the IWSLT’2013 evaluation campaign on spoken language translation. We used one phrase-based and two hierarchical decoders, exploring various settings thereof. We further experimented with three domain adaptation methods, and with various Arabic word segmentation schemes. Combining the output of several systems yielded a gain of up to 3.4 BLEU points over the baseline. Here we also describe a specialized normalization scheme for evaluating Arabic output, which was adopted for the IWSLT’2013 evaluation campaign.
         bibtex: >
@@ -410,9 +410,9 @@
         img: IWSLT2013-Guzman
         venue: workshop
         booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
-        slides: media/IWSLT2013-Guzman.pptx
+        slides: /media/IWSLT2013-Guzman.pptx
         booktitle-url: http://workshop2013.iwslt.org/
-        doc-url: papers/IWSLT2013-Guzman.pdf
+        doc-url: /papers/IWSLT2013-Guzman.pdf
         abstract: >
             In this paper, we introduce a new parallel corpus of subtitles of educational videos: the AMARA corpus for online educational content. We crawl a multilingual collection community generated subtitles, and present the results of processing the Arabic–English portion of the data, which yields a parallel corpus of about 2.6M Arabic and 3.9M English words. We explore different approaches to align the segments, and extrinsically evaluate the resulting parallel corpus on the standard TED-talks tst-2010. We observe that the data can be successfully used for this task, and also observe an absolute improvement of 1.6 BLEU when it is used in combination with TED data. Finally, we analyze some of the specific challenges when translating the educational content.
         bibtex: >
@@ -439,10 +439,10 @@
         id: LREC2014-Abdelali
         img: LREC2014-Abdelali
         venue: conference
-        slides: media/LREC2014-Abdelali.pdf
+        slides: /media/LREC2014-Abdelali.pdf
         booktitle: Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14)
         booktitle-url: http://lrec2014.lrec-conf.org/
-        doc-url: papers/LREC2014-Abdelali.pdf
+        doc-url: /papers/LREC2014-Abdelali.pdf
         abstract: >
             This paper presents the AMARA corpus of on-line educational content: a new parallel corpus of educational video subtitles, multilingually aligned for 20 languages, i.e. 20 monolingual corpora and 190 parallel corpora. This corpus includes both resource-rich languages such as English and Arabic, and resource-poor languages such as Hindi and Thai. In this paper, we describe the gathering, validation, and preprocessing of a large collection of parallel, community-generated subtitles. Furthermore, we describe the methodology used to prepare the data for Machine Translation tasks. Additionally, we provide a document-level, jointly aligned development and test sets for 14 language pairs, designed for tuning and testing Machine Translation systems. We provide baseline results for these tasks, and highlight some of the challenges we face when building machine translation systems for educational content.
         bibtex: >
@@ -470,7 +470,7 @@
         venue: conference
         pages: 401-411
         booktitle: Universal Access in Human-Computer Interaction. Design for All and Accessibility Practice
-        doc-url: papers/HCII2014-Jansen.pdf
+        doc-url: /papers/HCII2014-Jansen.pdf
         abstract: >
             In this paper, we present the main features of the Amara project, and its impact on the accessibility landscape with the use of innovative technology. We also show the effectiveness of volunteer communities in addressing large subtitling and translation tasks, that accompany the ever-growing amounts of online video content. Furthermore, we present two different applications for the platform. First, we examine the growing interest of organizations to build their own subtitling communities. Second, we present how the community-generated material can be used to advance the state-of-the-art of research in fields such as Statistical Machine Translation with focus on educational translation. We provide examples on how both tasks can be achieved successfully.
         bibtex: >
@@ -501,8 +501,8 @@
         pages: 687-698
         booktitle: Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL'14)
         booktitle-url: http://acl2014.org/
-        slides: media/ACL2014-Guzman.pdf
-        doc-url: papers/ACL2014-Guzman.pdf
+        slides: /media/ACL2014-Guzman.pdf
+        doc-url: /papers/ACL2014-Guzman.pdf
         abstract: >
             We present experiments in using discourse structure for improving machine translation evaluation. We first design two discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory. Then, we show that these measures can help improve a number of existing machine translation evaluation metrics both at the segmentand at the system-level. Rather than proposing a single new metric, we show that discourse information is complementary to the state-of-the-art evaluation metrics, and thus should be taken into account in the development of future richer evaluation metrics.
         bibtex: >
@@ -532,10 +532,10 @@
         img: WMT2014-Joty
         venue: workshop
         pages: 402-408
-        slides: media/WMT2014-Joty.pdf
+        slides: /media/WMT2014-Joty.pdf
         booktitle: Proceedings of the Ninth Workshop on Statistical Machine Translation (WMT'14)
         booktitle-url: http://statmt.org/wmt14
-        doc-url: papers/WMT2014-Joty.pdf
+        doc-url: /papers/WMT2014-Joty.pdf
         abstract: >
             We present novel automatic metrics for machine translation evaluation that use discourse structure and convolution kernels to compare the discourse tree of an automatic translation with that of the human reference. We experiment with five transformations and augmentations of a base discourse tree representation based on the rhetorical structure theory, and we combine the kernel scores for each of them into a single score. Finally, we add other metrics from the ASIYA MT evaluation toolkit, and we tune the weights of the combination on actual human judgments. Experiments on the WMT12 and WMT13 metrics shared task datasets show correlation with human judgments that outperforms what the best systems that participated in these years achieved, both at the segment and at the system level.
         bibtex: >
@@ -565,10 +565,10 @@
         img: EMNLP2014-Guzman
         venue: conference
         pages: 214-220
-        slides: media/EMNLP2014-Guzman.pdf
+        slides: /media/EMNLP2014-Guzman.pdf
         booktitle: Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)
         booktitle-url: http://emnlp2014.org/
-        doc-url:  papers/EMNLP2014-Guzman.pdf
+        doc-url:  /papers/EMNLP2014-Guzman.pdf
         abstract: >
             We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.
         bibtex: >
@@ -598,10 +598,10 @@
         id: ACL2015-Guzman
         img: ACL2015-Guzman
         venue: conference
-        doc-url:  papers/ACL2015-Guzman.pdf
+        doc-url:  /papers/ACL2015-Guzman.pdf
         booktitle-url: http://acl2015.org
         pages: 805-814
-        slides: media/ACL2015-Guzman.pdf
+        slides: /media/ACL2015-Guzman.pdf
         abstract: >
             We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
  
@@ -637,9 +637,9 @@
         id:  NIST2015-Sajjad
         img:  NIST2015-Sajjad
         venue: workshop
-        doc-url:  papers/NIST2015-Sajjad.pdf
+        doc-url:  /papers/NIST2015-Sajjad.pdf
         pages: 
-        slides: media/NIST2015-Sajjad.pdf
+        slides: /media/NIST2015-Sajjad.pdf
         booktitle-url: http://www.nist.gov/itl/iad/openmt15.cfm
         booktitle: Proceedings of the NIST Open Machine Translation Evaluation Workshop 
         abstract: >
@@ -669,7 +669,7 @@
         id: INTERSPEECH2015-Abdelali
         img: INTERSPEECH2015-Abdelali
         venue: demo 
-        doc-url:  papers/INTERSPEECH2015-Abdelali.pdf
+        doc-url:  /papers/INTERSPEECH2015-Abdelali.pdf
         pages: 
         slides:
         booktitle-url: http://interspeech2015.org 
@@ -700,9 +700,9 @@
         id: CONLL2015-Guzman
         img: CONLL2015-Guzman
         venue: conference
-        doc-url: papers/CONLL2015-Guzman.pdf
+        doc-url: /papers/CONLL2015-Guzman.pdf
         pages: 62-72
-        slides: media/CONLL2015-Guzman.pdf
+        slides: /media/CONLL2015-Guzman.pdf
         booktitle-url:  http://www.conll.org/2015
         booktitle: Proceedings of the Nineteenth Conference on Computational Natural Language Learning (CoNLL)
         abstract: >
@@ -738,8 +738,8 @@
         pages: 457-466
         booktitle: Proceedings of the Tenth Workshop on Statistical Machine Translation
         booktitle-url: http://www.statmt.org/wmt15/papers.html
-        doc-url: papers/WMT2015-Guzman.pdf
-        slides: media/WMT2015-Guzman.pptx
+        doc-url: /papers/WMT2015-Guzman.pdf
+        slides: /media/WMT2015-Guzman.pptx
         software: https://github.com/Qatar-Computing-Research-Institute/wmt15eyetracking
         errata: few typos were corrected in this version
         abstract: >
@@ -772,8 +772,8 @@
         booktitle: >
             Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies
         booktitle-url: http://aclweb.org/anthology/N/N16/
-        doc-url: papers/NAACL2016-Sajjad.pdf
-        slides: media/NAACL2016-Sajjad.pdf
+        doc-url: /papers/NAACL2016-Sajjad.pdf
+        slides: /media/NAACL2016-Sajjad.pdf
         software: https://github.com/Qatar-Computing-Research-Institute/iAppraise
         abstract: >
             In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.
@@ -805,8 +805,8 @@
             Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations
 
         booktitle-url: http://aclweb.org/anthology/N/N16/
-        doc-url: papers/NAACL2016-Abdelali.pdf
-        slides: media/NAACL2016-Abdelali.pdf
+        doc-url: /papers/NAACL2016-Abdelali.pdf
+        slides: /media/NAACL2016-Abdelali.pdf
         software: https://github.com/Qatar-Computing-Research-Institute/iAppraise
         bibtex: >
             @inproceedings{abdelali-durrani-guzman:2016:N16-3,
