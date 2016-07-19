@@ -13,7 +13,7 @@
 # python parsebib.py bibtex.bib
 
 import sys
-print(sys.version)
+#print(sys.version)
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
@@ -31,6 +31,11 @@ def preprocess(text):
 	text=text.replace(u'\\`{a}',u'à')
 	text=text.replace('--', '-') 
 	text = re.sub(r'\{(.*?)\}', r'\g<1>', text)
+	text = re.sub(r'\n', ' ' ,text)
+	return text
+def processAuthor(text):
+	text=text.replace('á','a')
+	text=text.replace(',',"")
 	return text
 
 def parseauthors(text):
@@ -49,32 +54,45 @@ def parseauthors(text):
 
 	return ", ".join(final[0:-1])+ u", and "+ final[-1] 
 
+def abbrevVenue(text):
+	return ''.join([x for x in text if x.isupper() ])	
+
+
 def parse(bibfile):
 
 	with open(bibfile) as bibtex_file:
 		writer = BibTexWriter()
 		bib_database = bibtexparser.load(bibtex_file)
 
+
 		for entry in bib_database.entries:
+			authors=parseauthors(preprocess(entry["author"])).encode('UTF8')
+			venue= preprocess(entry["booktitle"]).encode('UTF8')
 			print "\t-"
 			print "\t\tlayout: paper"
-			print "\t\tpaper-type: "+ preprocess(entry["type"])
+			print "\t\tpaper-type: "+ preprocess(entry["type"]) +" #changes display of reference in paper list"
 			print "\t\tyear: " + preprocess(entry["year"])
-			print "\t\tselected: no"
+			print "\t\tselected: no #yes/no"
 			print "\t\ttitle: >\n\t\t\t"+preprocess(entry["title"])
-			print "\t\tauthors: "+ parseauthors(preprocess(entry["author"])).encode('UTF8')
-			print "\t\timg: "
-			print "\t\tvenue: "
+			print "\t\tauthors: "+ authors
+			print "\t\tid: "+ abbrevVenue(venue) + preprocess(entry["year"]).encode('UTF8')  + "_" + processAuthor(authors.split()[1])
+			print "\t\timg: #image_id to be found in img/paper/ID.jpg"
+			print "\t\tslides: # e.g. media/$ID.pptx "
+			print "\t\tcode: #e.g. github.com/project"
+			print "\t\terrata: #if you have errata, insert here"
+			print "\t\tvenue: #for CV e.g. book[chapters], conference[journal],  workshop[demo], techreport"
 			if("pages" in entry.keys()):
 				print "\t\tpages: "+preprocess(entry["pages"])
 			if("booktitle" in entry.keys()):
-				print "\t\tbooktitle: "+preprocess(entry["booktitle"])
+				print "\t\tbooktitle: >\n\t\t\t"+venue
 			if("journal" in entry.keys()):
 				print "\t\tjournal: "+preprocess(entry["journal"])
 			if("url" in entry.keys()):
 				print "\t\tdoc-url: "+preprocess(entry["url"])
+			elif "link" in entry.keys() :
+				print "\t\tdoc-url: "+preprocess(entry["link"])
 			else:
-				print "\t\tdoc-url: "
+				print "\t\tdoc-url:  # e.g. papers/$ID.pdf"
 
 			if("abstract" in entry.keys()):
 				print "\t\tabstract: >\n\t\t\t" + preprocess(entry["abstract"]).encode('UTF8')

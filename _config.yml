@@ -12,11 +12,11 @@ collections:
   cv:
     output: true 
 
-deploy: "https://guzmanhe.github.io/"
+deploy: "http://0.0.0.0"
 
 #gems:
 #  - jekyll-pandoc
-
+#env: local
 pandoc:
   format: html5
   extensions:
