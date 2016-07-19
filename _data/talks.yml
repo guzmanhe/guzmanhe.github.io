@@ -7,25 +7,3 @@
         url: media/TMTMarathon2015-Guzman.pdf
         img: TMTMarathon2015-Guzman
         title: A Brief introduction to MT Evaluation
--
-        layout: talk
-        year: 2015
-        detail: I gave a talk to my colleagues at QCRI about my recommendations on how to prepare for the summer internship program 
-        url: media/TInternship-2015.pdf
-        img: TInternship-2015
-        title: Preparing your summer internship. Hot Summer/Cool Research program.
--   
-        layout: talk
-        year: 2009
-        detail: Introductory talk to SMT (Spanish). Tecnológico de Orizaba
-        title: Método para la Traducción Automática Estadística
-        url: media/TOrizaba-2009.pdf
-        img: TOrizaba-2009
--  
-        layout: talk
-        year: 2015
-        detail: Introduction to SMT and post-editing for professional translators. With Stephan Vogel. Sixth Annual International Translation Conference (TII)
-        title: >
-            Machine Translation: A Game Changer for the Translation Professionals?
-        url: media/TII-TransTech-2015-v4.pptx
-        img: TII-TransTech-2015

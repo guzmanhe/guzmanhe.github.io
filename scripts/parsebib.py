@@ -13,7 +13,7 @@
 # python parsebib.py bibtex.bib
 
 import sys
-print(sys.version)
+#print(sys.version)
 
 import bibtexparser
 from bibtexparser.bwriter import BibTexWriter
@@ -68,7 +68,7 @@ def parse(bibfile):
 			if("pages" in entry.keys()):
 				print "\t\tpages: "+preprocess(entry["pages"])
 			if("booktitle" in entry.keys()):
-				print "\t\tbooktitle: "+preprocess(entry["booktitle"])
+				print "\t\tbooktitle: >\n\t\t\t"+preprocess(entry["booktitle"])
 			if("journal" in entry.keys()):
 				print "\t\tjournal: "+preprocess(entry["journal"])
 			if("url" in entry.keys()):
