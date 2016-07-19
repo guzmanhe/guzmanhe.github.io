@@ -3,6 +3,7 @@
         paper-type: inproceedings
         selected: no 
         year: 2005
+        id: SMC2005-Guzman
         img: SMC2005-Guzman
         doc-url: papers/SMC2005-Guzman.pdf
         slides: media/SMC2005-Guzman.ppt
@@ -34,6 +35,7 @@
         authors: Francisco Guzmán, and Leonardo Garrido
         booktitle: Technical Report CSI-RI-005
         journal: Technical Report CSI-RI-005
+        id: techreport
         img: techreport
         venue: techreport
         bibtex: > 
@@ -59,6 +61,7 @@
         authors: Francisco Guzmán, and Leonardo Garrido
         doc-url: papers/MICAI2007-Guzman.pdf
         slides: media/MICAI2007-Guzman.pdf
+        id: MICAI2007-Guzman
         img: MICAI2007-Guzman
         venue: conference
         pages: 163-172
@@ -83,6 +86,7 @@
         title: Translation paraphrases in phrase-based machine translation
         booktitle: Computational Linguistics and Intelligent Text Processing (CICLing'08)
         booktitle-url: http://www.cicling.org/2008/
+        id: CICLING2008-Guzman
         img: CICLING2008-Guzman
         doc-url: papers/CICLING2008-Guzman.pdf
         authors: Francisco Guzmán, and Leonardo Garrido
@@ -110,6 +114,7 @@
         paper-type: inproceedings
         selected: yes
         year: 2009
+        id: MTSummit2009-Guzman
         img: MTSummit2009-Guzman
         title: Reassessment of the role of phrase extraction in pbsmt
         doc-url: papers/MTSummit2009-Guzman.pdf
@@ -142,6 +147,7 @@
         title: >
             EMDC: a semi-supervised approach for word alignment
         doc-url: papers/COLING2010-Gao.pdf
+        id: COLING2010-Gao
         img: COLING2010-Gao
         pages: 349-357
         venue: conference
@@ -166,6 +172,7 @@
         title: Word Alignment Revisited
         authors: Francisco Guzmán, Qin Gao, Jan Niehues, and Stephan Vogel
         doc-url: papers/GALEBOOK2011-Guzman-first.pdf
+        id: GALEBOOK2011-Guzman
         img: GALEBOOK2011-Guzman
         pages: 164-175
         editor: Joseph Olive, Caitlin Christianson,  and John McCary
@@ -190,6 +197,7 @@
         title: >
             The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
         authors: Francisco Guzmán
+        id: Thesis2011-Guzman
         img: Thesis2011-Guzman
         venue: thesis
         doc-url: papers/Thesis2011-Guzman.pdf
@@ -221,6 +229,7 @@
         slides: media/WMT2012-Guzman.pdf
         booktitle: Proceedings of the Seventh Workshop on Statistical Machine Translation (WMT'12)
         booktitle-url: http://www.statmt.org/wmt12/
+        id: WMT2012-Guzman
         img: WMT2012-Guzman
         venue: workshop
         abstract: > 
@@ -244,6 +253,7 @@
         paper-type: inproceedings
         selected: yes
         year: 2012
+        id: COLING2012-Nakov
         img: COLING2012-Nakov
         title: Optimizing for Sentence-Level BLEU+1 Yields Short Translations
         doc-url: papers/COLING2012-Nakov.pdf
@@ -278,6 +288,7 @@
         authors: Francisco Guzmán, and  Stephan Vogel
         doc-url: papers/COLING2012-Guzman.pdf
         media: media/COLING2012-Guzman.ppt
+        id: COLING2012-Guzman
         img: COLING2012-Guzman
         booktitle: Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)
         booktitle-url: http://aclweb.org/portal/content/24th-international-conference-computational-linguistics
@@ -305,6 +316,7 @@
         title: >
             A Tale about PRO and Monsters
         authors: Preslav Nakov, Francisco Guzmán, and Stephan Vogel
+        id: ACL2013_Short-Nakov
         img: ACL2013_Short-Nakov
         venue: conference
         pages: 12-17
@@ -336,6 +348,7 @@
         title: >
             Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples
         authors: Preslav Nakov, Fahad Al Obaidli, Francisco Guzmán, and Stephan Vogel
+        id: RANLP2013-Nakov
         img: RANLP2013-Nakov
         slides: media/RANLP2013-Nakov.pdf
         venue: conference
@@ -363,6 +376,7 @@
         title: >
             QCRI at IWSLT 2013: Experiments in Arabic-English and English-Arabic Spoken Language Translation
         authors: Hassan Sajjad, Francisco Guzmán, Preslav Nakov, Ahmed Abdelali, Kenton Murray, Fahad Al Obaidli, and Stephan Vogel
+        id: IWSLT2013-Sajjad
         img: IWSLT2013-Sajjad
         venue: workshop
         booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
@@ -392,6 +406,7 @@
         title: >
             The AMARA Corpus: Building Resources for Translating the Web's Educational Content
         authors: Francisco Guzmán, Hassan Sajjad, Ahmed Abdelali, and Stephan Vogel
+        id: IWSLT2013-Guzman
         img: IWSLT2013-Guzman
         venue: workshop
         booktitle: Proceedings of the 10th International Workshop on Spoken Language Translation (IWSLT'13)
@@ -421,6 +436,7 @@
         title: >
             The AMARA Corpus: Building parallel language resources for the educational domain
         authors: Ahmed Abdelali, Francisco Guzmán, Hassan Sajjad, and Stephan Vogel
+        id: LREC2014-Abdelali
         img: LREC2014-Abdelali
         venue: conference
         slides: media/LREC2014-Abdelali.pdf
@@ -449,6 +465,7 @@
         title: >
             Amara: A Sustainable, Global Solution for Accessibility, Powered by Communities of Volunteers
         authors: Dean Jansen, Aleli Alcala, and Francisco Guzmán
+        id: HCII2014-Jansen
         img: HCII2014-Jansen
         venue: conference
         pages: 401-411
@@ -478,6 +495,7 @@
         title: >
             Using Discourse Structure Improves Machine Translation Evaluation
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
+        id: ACL2014-Guzman
         img: ACL2014-Guzman
         venue: conference
         pages: 687-698
@@ -510,6 +528,7 @@
         title: >
             DiscoTK: Using Discourse Structure for Machine Translation Evaluation
         authors: Shafiq Joty, Francisco Guzmán, Lluís Màrquez, and Preslav Nakov
+        id: WMT2014-Joty
         img: WMT2014-Joty
         venue: workshop
         pages: 402-408
@@ -542,6 +561,7 @@
         title: >
             Learning to Differentiate Better from Worse Translations
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, Alessandro Moschitti, Preslav Nakov, and Massimo Nicosia
+        id: EMNLP2014-Guzman
         img: EMNLP2014-Guzman
         venue: conference
         pages: 214-220
@@ -575,6 +595,7 @@
         title: >
             Pairwise Neural Machine Translation Evaluation
         authors: Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov
+        id: ACL2015-Guzman
         img: ACL2015-Guzman
         venue: conference
         doc-url:  papers/ACL2015-Guzman.pdf
@@ -613,6 +634,7 @@
         title: >
             The QCN Egyptian Arabic to English Statistical Machine Translation System for NIST OpenMT’2015
         authors: Hassan Sajjad, Nadir Durrani, Francisco Guzmán, Preslav Nakov, Ahmed Abdelali, Stephan Vogel, Wael Salloum, Ahmed El Kholy, Nizar Habash
+        id:  NIST2015-Sajjad
         img:  NIST2015-Sajjad
         venue: workshop
         doc-url:  papers/NIST2015-Sajjad.pdf
@@ -644,6 +666,7 @@
             QAT<sup>2</sup>  – The QCRI Advanced Transcription and Translation System
         authors: Ahmed Abdelali, Ahmed Ali, Francisco Guzmán, Felix Stahlberg, Stephan Vogel, Yifan Zhang
 
+        id: INTERSPEECH2015-Abdelali
         img: INTERSPEECH2015-Abdelali
         venue: demo 
         doc-url:  papers/INTERSPEECH2015-Abdelali.pdf
@@ -674,6 +697,7 @@
             Analyzing Optimization for Statistical Machine 
             Translation: MERT Learns Verbosity, PRO Learns Length
         authors: Francisco Guzmán, Preslav Nakov, Stephan Vogel
+        id: CONLL2015-Guzman
         img: CONLL2015-Guzman
         venue: conference
         doc-url: papers/CONLL2015-Guzman.pdf
@@ -708,6 +732,7 @@
         title: >
             How do Humans Evaluate Machine Translation
         authors: Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel
+        id: WMT2015-Guzman
         img: WMT2015-Guzman
         venue: workshop
         pages: 457-466
@@ -740,6 +765,7 @@
         title: >
             Eyes Don't Lie: Predicting Machine Translation Quality Using Eye Movement
         authors:  Hassan Sajjad, Francisco Guzmán, Nadir Durrani, Ahmed Abdelali, Houda Bouamor, Irina Temnikova, and Stephan Vogel
+        id: NAACL2016-Sajjad
         img: NAACL2016-Sajjad
         venue: conference
         pages: 1082-1088
@@ -771,6 +797,7 @@
         title: >
             iAppraise: A Manual Machine Translation Evaluation Environment Supporting Eye-tracking
         authors: Ahmed Abdelali, Nadir Durrani, and Francisco Guzmán
+        id: NAACL2016-Abdelali
         img: NAACL2016-Abdelali
         venue: workshop
         pages: 17-21
