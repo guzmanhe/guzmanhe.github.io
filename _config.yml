@@ -12,7 +12,7 @@ collections:
   cv:
     output: true 
 
-deploy: "http://http://guzmanhe.github.io"
+deploy: "https://guzmanhe.github.io"
 
 #gems:
 #  - jekyll-pandoc
