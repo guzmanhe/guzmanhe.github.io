@@ -7,7 +7,7 @@
     {% endif %}
   </a>
   <div class="media-body"  >
-    {% if include.paper.selected %}<span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% endif %}  <strong><a href="{{site.deploy}}/papers/{{include.paper.id}}.html">{{ include.paper.title }}</a></strong><br/>
+    {% if include.paper.selected %}<span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% endif %}  <strong><a href="/papers/{{include.paper.id}}.html">{{ include.paper.title }}</a></strong><br/>
     {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}  
     {% case include.paper.paper-type %}
       {% when "inproceedings" %}
