@@ -740,7 +740,7 @@
         title: >
             Eyes Don't Lie: Predicting Machine Translation Quality Using Eye Movement
         authors:  Hassan Sajjad, Francisco Guzmán, Nadir Durrani, Ahmed Abdelali, Houda Bouamor, Irina Temnikova, and Stephan Vogel
-        img: WMT2015-Guzman
+        img: NAACL2016-Sajjad
         venue: conference
         pages: 1082-1088
         booktitle: >
@@ -771,8 +771,8 @@
         title: >
             iAppraise: A Manual Machine Translation Evaluation Environment Supporting Eye-tracking
         authors: Ahmed Abdelali, Nadir Durrani, and Francisco Guzmán
-        img: WMT2015-Guzman
-        venue: conference
+        img: NAACL2016-Abdelali
+        venue: workshop
         pages: 17-21
         booktitle: >
             Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations
