@@ -1,8 +1,8 @@
 exclude: ['README.md']
 timezone: US/Eastern
 markdown: pandoc
-gems:
-  - jekyll-pandoc
+#gems:
+#  - jekyll-pandoc
 
 collections:
   projects:
