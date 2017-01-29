@@ -10,10 +10,9 @@ collections:
   papers:
     output: true
   cv:
-    output: true
+    output: false
 
-#deploy: "https://guzmanhe.github.io"
-deploy: 0.0.0.0:4000
+deploy: "https://guzmanhe.github.io"
 
 #gems:
 #  - jekyll-pandoc

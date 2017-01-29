@@ -18,11 +18,11 @@ def main(file):
 		#for item in doc.
 		doc['layout']='singlepaper'
 		doc['picture']='paco2'
+
 		string=yaml.dump(doc,explicit_start=True, default_flow_style=False,allow_unicode=True)
 		newfile.write(string)
 		newfile.write("---\n\n")
 		newfile.write("{% include singlepaper.html paper=page %}")
-
 
 
 		newfile.close()

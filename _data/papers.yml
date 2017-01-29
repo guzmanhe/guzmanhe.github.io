@@ -654,7 +654,6 @@
               publisher={NIST}
             }
 
-
     -
         layout: paper
         toappear: no
@@ -668,7 +667,7 @@
 
         id: INTERSPEECH2015-Abdelali
         img: INTERSPEECH2015-Abdelali
-        venue: demo
+        venue: workshop
         doc-url:  /papers/INTERSPEECH2015-Abdelali.pdf
         pages:
         slides:

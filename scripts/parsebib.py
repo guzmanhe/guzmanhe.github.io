@@ -43,7 +43,6 @@ def parseauthors(text):
 
 	authors=text.split(' and ')
 
-
 	for author in authors:
 		try:
 			(last,first)= author.split(',')
