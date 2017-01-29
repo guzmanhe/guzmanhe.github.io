@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="citation_title" content="{{page.title}}" >
+    {% assign paper_authors =  page.authors | split:',' | strip| ignore: "and"  %}
+    {% for author in paper_authors %}
+    <meta name="citation_author" content="{{author}}" >
+    {% endfor %}
+    <meta name="citation_publication_date" content="{{page.year}}">
+    <meta name="citation_journal_title" content="{{page.booktitle}}">
+    {% if page.pages %}
+    {% assign pages= page.pages | split:'-' %}
+    <meta name="citation_firstpage" content="{{pages | first}}">
+    <meta name="citation_lastpage" content="{{pages | last}}">
+    {% endif %}
+    <meta name="citation_pdf_url" content="{{page.doc-url}}">
+
+    <title>{{ page.title }}</title>
+
+    <link href="{{site.deploy}}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{site.deploy}}/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="{{site.deploy}}/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{site.deploy}}/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          {% include nav-bar.html %}
+        </div>
+        <div class="col-sm-10">
+          {{ content }}
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated {{ site.time | date: "%B %d, %Y" }}.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

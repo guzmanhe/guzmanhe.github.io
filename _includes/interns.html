@@ -1,0 +1,14 @@
+<div class="media" >
+  <div class="pull-left thumbnail">
+    {% if include.post.img %}
+    <img src="img/interns/{{ include.post.img }}.jpg " width="150px" alt=""/>
+    {% endif %}
+  </div>
+  <div class="media-body">
+    <strong>{{ include.post.title }}</strong><br/> {{include.post.year}} ({{include.post.duration}})<br/>
+    {% if include.post.detail %} {{include.post.detail}}<br/>{% endif %}
+    {% if include.post.interns %} <b>Interns:</b> {{ include.post.interns}} <br/>{% endif %}
+    {% if include.post.outcomes %}<span class="label label-info">Outcomes</span> {{include.post.outcomes}} {% endif %}
+  </div>
+</div>
+

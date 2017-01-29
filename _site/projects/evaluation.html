@@ -1,0 +1,970 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Machine Translation Evaluation</title>
+
+    <link href="http://0.0.0.0:4000/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="http://0.0.0.0:4000/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://0.0.0.0:4000/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://0.0.0.0:4000/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <br/><br/>
+<img src="http://0.0.0.0:4000/img/nav/paco.jpg" class="img-responsive" alt="paco"/>
+<ul class="nav navbar-inverse">
+  <li>
+    <a href="http://0.0.0.0:4000/index.html">Home</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/papers.html">Papers &amp; Talks</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/mentoring.html">Mentoring</a>
+  </li>
+  <!-- <li>
+    <a href=".html">Collaborators</a>
+  </li>-->
+  <li>
+    <a href="http://0.0.0.0:4000/cv.html">CV</a>
+  </li>
+</ul>
+<!-- <img src="http://0.0.0.0:4000/img/nav/qcri.jpg" class="img-responsive" alt="qcri"/> -->
+
+        </div>
+        <div class="col-sm-10">
+          <div class="page-header">
+      <h3>Machine Translation Evaluation </h3>
+</div>
+<div class="container">
+<div class="row">
+<h4> Description </h4>
+<div class="col-sm-8">
+In this project, my team and I have explored using different levels of linguistic representations to improve Machine Translation Evaluation. We have looked at combining discourse trees, semantics and syntax to improve the state-of-the-art. We have used both structured (trees) and distributed (vector) representations to perform this task. Currently, we're looking at how humans evaluate translations using eyetracking.
+
+</div>
+</div>
+
+
+<div class= "row">
+<h4> Achievements </h4>
+<div class="col-sm-8">
+<ul class="list-group">
+
+<li class="list-group-item">
+<span class="badge" >August 2014</span><span>Best metric at the WMT2014 metrics task.</span>
+</li>
+
+
+</ul>
+</div>
+</div>
+
+<div class="row">
+
+<h4> Related Publications </h4>
+<div class="container">
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/ACL2015-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/ACL2015-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/ACL2015-Guzman.html">Pairwise Neural Machine Translation Evaluation
+</a></strong><br/>
+    Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov.
+    
+         In 
+        
+          <a href="http://acl2015.org">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian Federation of Natural Language Processing
+</i>, pages 805-814, 
+      
+    2015.<br/>
+    
+     <a href="/papers/ACL2015-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractACL2015-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractACL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Pairwise Neural Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexACL2015-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexACL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Pairwise Neural Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @InProceedings{guzman2015-ACL, author    = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav }, title     = {Pairwise Neural Machine Translation Evaluation},
+  booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
+            Federation of Natural Language Processing ({ACL}'15)},
+  month     = {July},
+  year      = {2015},
+  address   = {Beijing, China},
+  publisher = {Association for Computational Linguistics},
+  pages     = {805--814},
+  url       = {http://www.aclweb.org/anthology/P15-1078},
+  Abstract = {We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/ACL2015-Guzman.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/WMT2015-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/WMT2015-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/WMT2015-Guzman.html">How do Humans Evaluate Machine Translation
+</a></strong><br/>
+    Francisco Guzmán, Ahmed Abdelali, Irina Temnikova, Hassan Sajjad, and Stephan Vogel.
+    
+         In 
+        
+          <a href="http://www.statmt.org/wmt15/papers.html">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the Tenth Workshop on Statistical Machine Translation</i>, pages 457-466, 
+      
+    2015.<br/>
+    
+     <a href="/papers/WMT2015-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractWMT2015-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractWMT2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">How do Humans Evaluate Machine Translation
+</h4>
+            </div>
+            <div class="modal-body">
+              In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexWMT2015-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexWMT2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">How do Humans Evaluate Machine Translation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{guzman-EtAl:2015:WMT,
+ abstract = {In this paper, we take a closer look at the MT evaluation process from a glass-box perspective using eye-tracking. We analyze two aspects of the evaluation task: the background of evaluators (monolingual or bilingual) and the sources of information available, and we evaluate them using time and consistency as criteria. Our findings show that monolinguals are slower but more consistent than bilinguals, especially when only target language information is available. When exposed to various sources of information, evaluators in general take more time and in the case of monolinguals, there is a drop in consistency. Our findings suggest that to have consistent and cost effective MT evaluations, it is better to use monolinguals with only target language information.},
+ address = {Lisbon, Portugal},
+ author = {Guzm\'{a}n, Francisco  and  Abdelali, Ahmed  and  Temnikova, Irina  and  Sajjad, Hassan  and  Vogel, Stephan},
+ booktitle = {Proceedings of the Tenth Workshop on Statistical Machine Translation},
+ link = {http://aclweb.org/anthology/W15-3059},
+ month = {September},
+ pages = {457--466},
+ publisher = {Association for Computational Linguistics},
+ title = {How do Humans Evaluate Machine Translation},
+ year = {2015}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <!-- Modal -->
+      <div class="modal fade" id="errataWMT2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Errata | How do Humans Evaluate Machine Translation
+</h4>
+            </div>
+            <div class="modal-body">
+              few typos were corrected in this version
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+       <a data-toggle="modal" href="#errataWMT2015-Guzman" class="label label-default">
+         Errata
+      </a>&nbsp;
+    
+    
+      <a href="http://0.0.0.0:4000//media/WMT2015-Guzman.pptx" class="label label-info">Slides</a>
+    
+    
+    
+    
+      <a href="https://github.com/Qatar-Computing-Research-Institute/wmt15eyetracking" class="label label-warning">Software/Code</a>
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+      <div   class="media" >
+  <a class="pull-left thumbnail"  href="/papers/WMT2014-Joty.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/WMT2014-Joty.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+      <strong><a href="/papers/WMT2014-Joty.html">DiscoTK: Using Discourse Structure for Machine Translation Evaluation
+</a></strong><br/>
+    Shafiq Joty, Francisco Guzmán, Lluís Màrquez, and Preslav Nakov.
+    
+         In 
+        
+          <a href="http://statmt.org/wmt14">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the Ninth Workshop on Statistical Machine Translation (WMT'14)</i>, pages 402-408, 
+      
+    2014.<br/>
+    
+     <a href="/papers/WMT2014-Joty.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractWMT2014-Joty" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractWMT2014-Joty" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">DiscoTK: Using Discourse Structure for Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              We present novel automatic metrics for machine translation evaluation that use discourse structure and convolution kernels to compare the discourse tree of an automatic translation with that of the human reference. We experiment with five transformations and augmentations of a base discourse tree representation based on the rhetorical structure theory, and we combine the kernel scores for each of them into a single score. Finally, we add other metrics from the ASIYA MT evaluation toolkit, and we tune the weights of the combination on actual human judgments. Experiments on the WMT12 and WMT13 metrics shared task datasets show correlation with human judgments that outperforms what the best systems that participated in these years achieved, both at the segment and at the system level.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexWMT2014-Joty" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexWMT2014-Joty" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">DiscoTK: Using Discourse Structure for Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{joty-EtAl:2014:W14-33,
+ abstract = {We present novel automatic metrics for machine translation evaluation that use discourse structure and convolution kernels to compare the discourse tree of an automatic translation with that of the human reference. We experiment with five transformations and augmentations of a base discourse tree representation based on the rhetorical structure theory, and we combine the kernel scores for each of them into a single score. Finally, we add other metrics from the ASIYA MT evaluation toolkit, and we tune the weights of the combination on actual human judgments. Experiments on the WMT12 and WMT13 metrics shared task datasets show correlation with human judgments that outperforms what the best systems that participated in these years achieved, both at the segment and at the system level.},
+ address = {Baltimore, Maryland, USA},
+ author = {Joty, Shafiq  and  Guzm\'{a}n, Francisco  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav},
+ booktitle = {Proceedings of the Ninth Workshop on Statistical Machine Translation ({WMT}'14)},
+ link = {http://www.aclweb.org/anthology/W/W14/W14-3352},
+ month = {June},
+ pages = {402--408},
+ publisher = {Association for Computational Linguistics},
+ title = {DiscoTK: Using Discourse Structure for Machine Translation Evaluation},
+ year = {2014}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/WMT2014-Joty.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/EMNLP2014-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/EMNLP2014-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/EMNLP2014-Guzman.html">Learning to Differentiate Better from Worse Translations
+</a></strong><br/>
+    Francisco Guzmán, Shafiq Joty, Lluís Màrquez, Alessandro Moschitti, Preslav Nakov, and Massimo Nicosia.
+    
+         In 
+        
+          <a href="http://emnlp2014.org/">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>, pages 214-220, 
+      
+    2014.<br/>
+    
+     <a href="/papers/EMNLP2014-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractEMNLP2014-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractEMNLP2014-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Learning to Differentiate Better from Worse Translations
+</h4>
+            </div>
+            <div class="modal-body">
+              We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexEMNLP2014-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexEMNLP2014-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Learning to Differentiate Better from Worse Translations
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{guzman-EtAl:2014:EMNLP2014,
+ abstract = {We present a pairwise learning-to-rank approach to machine translation evaluation that learns to differentiate better from worse translations in the context of a given reference. We integrate several layers of linguistic information encapsulated in tree-based structures, making use of both the reference and the system output simultaneously, thus bringing our ranking closer to how humans evaluate translations. Most importantly, instead of deciding upfront which types of features are important, we use the learning framework of preference re-ranking kernels to learn the features automatically. The evaluation results show that learning in the proposed framework yields better correlation with humans than computing the direct similarity over the same type of structures. Also, we show our structural kernel learning (SKL) can be a general framework for MT evaluation, in which syntactic and semantic information can be naturally incorporated.},
+ address = {Doha, Qatar},
+ author = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Moschitti, Alessandro  and  Nakov, Preslav  and  Nicosia, Massimo},
+ booktitle = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP'14)},
+ link = {http://www.aclweb.org/anthology/D14-1027},
+ month = {October},
+ pages = {214--220},
+ publisher = {Association for Computational Linguistics},
+ title = {Learning to Differentiate Better from Worse Translations},
+ year = {2014}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/EMNLP2014-Guzman.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/ACL2014-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/ACL2014-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/ACL2014-Guzman.html">Using Discourse Structure Improves Machine Translation Evaluation
+</a></strong><br/>
+    Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov.
+    
+         In 
+        
+          <a href="http://acl2014.org/">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (ACL'14)</i>, pages 687-698, 
+      
+    2014.<br/>
+    
+     <a href="/papers/ACL2014-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractACL2014-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractACL2014-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Using Discourse Structure Improves Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              We present experiments in using discourse structure for improving machine translation evaluation. We first design two discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory. Then, we show that these measures can help improve a number of existing machine translation evaluation metrics both at the segmentand at the system-level. Rather than proposing a single new metric, we show that discourse information is complementary to the state-of-the-art evaluation metrics, and thus should be taken into account in the development of future richer evaluation metrics.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexACL2014-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexACL2014-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Using Discourse Structure Improves Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{guzman-EtAl:2014:P14-1,
+ abstract = {We present experiments in using discourse structure for improving machine translation evaluation. We first design two discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory. Then, we show that these measures can help improve a number of existing machine translation evaluation metrics both at the segmentand at the system-level. Rather than proposing a single new metric, we show that discourse information is complementary to the state-of-the-art evaluation metrics, and thus should be taken into account in the development of future richer evaluation metrics.},
+ address = {Baltimore, Maryland, USA},
+ author = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav},
+ booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics ({ACL}'14)},
+ link = {http://www.aclweb.org/anthology/P/P14/P14-1065},
+ month = {June},
+ pages = {687--698},
+ publisher = {Association for Computational Linguistics},
+ title = {Using Discourse Structure Improves Machine Translation Evaluation},
+ year = {2014}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/ACL2014-Guzman.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+</div></div>
+
+</div>
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated January 29, 2017.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>  fork from
+        <a href="https://github.com/alopez/alopez.github.com">Adam Lopez's site</a>.<br/>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

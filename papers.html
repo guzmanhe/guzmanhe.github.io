@@ -1,0 +1,40 @@
+---
+layout: default
+title: Francisco Guzman | Papers &amp; Talks
+picture: paco2
+---
+<div class="page-header">
+  <h3>Papers and Talks</h3>
+<!-- <blockquote><i>I would have written a shorter letter, but I did not have the time.<br/>&mdash;Blaise Pascal</i></blockquote>
+</div> -->
+
+<h4>Papers</h4>
+
+
+ {%assign  years = site.data.papers | group_by :"year" | sort: "title" | reverse %}
+ {% for year in years %}
+  <h5> {{year.name}}</h5>
+ {% for post in year.items %}
+      {% include paper.html paper=post %}
+  {% endfor %}
+{% endfor %}
+<h4>Talks</h4>
+
+{% assign years= site.data.talks | group_by: "year"| sort: "name"| reverse %}
+{%for year in years %}
+
+{% for talk in year.items %}
+<div class="media">
+  <a class="pull-left thumbnail" {%if talk.url %} href="{{ talk.url }}" {% endif %}>
+    <img class="media-object" src="{{site.deploy}}/img/talk/{{ talk.img }}.jpg" alt="">
+  </a>
+  <div class="media-body" id="{{talk.img}}">
+    <strong>{{ talk.title }}</strong><br/>
+    {{ talk.detail }}.{{ talk.year }}
+    {% if talk.video %}<br/>
+      <a href="{{ talk.video }}"><span class="glyphicon glyphicon-film"></span></a> Video
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endfor %}

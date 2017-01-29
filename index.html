@@ -1,0 +1,92 @@
+---
+layout: default
+title: Francisco (Paco) Guzmán
+picture: paco2
+
+name: Francisco (Paco) Guzmán
+
+scholar:
+  id: eEBT0BAAAAAJ
+
+twitter:
+  #id: guzmanhe
+  #widget: 587238060623929344
+
+github:
+  id: guzmanhe
+
+work:
+  title: Research Scientist
+  email: fguzman _at_ fb _dot_ com
+  # group:
+  #  url: http://qcri.com/our-research/arabic-language-technologies/arabic-language-technologies/
+  #  name: Applied Machine Learning
+
+  department:
+    url: https://research.fb.com/category/applied-machine-learning/
+    name: Applied Machine Learning (AML)
+
+  company:
+    url: http://fb.com
+    name: Facebook
+---
+
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>{{ page.title }} </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <address>
+        <h4>{{ page.work.title }}</h4><br/>
+        <!-- <a href="{{ page.work.group.url }}">{{ page.work.group.name }}</a><br/> -->
+        <a href="{{ page.work.department.url }}">{{ page.work.department.name}}</a><br/>
+        <a href="{{ page.work.company.url }}">{{ page.work.company.name }}</a><br/>
+      </address>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:{{ page.work.email }}"><span class="glyphicon glyphicon-envelope"></span></a> Email<br/>
+      <!--<a href="tel:+44-1316504430"><span class="glyphicon glyphicon-phone"></span>+44 131 650 4430</a><br/>-->
+      {% if page.scholar.id %}<a href="http://scholar.google.com/citations?user={{ page.scholar.id }}">
+        <img src="img/ico/gs.png" alt=""/>
+      </a> Google Scholar<br/>{% endif %}
+      {% if page.github.id %} <a href="http://github.com/{{ page.github.id }}">
+        <img src="img/ico/github_icon.png" alt=""/>
+      </a> Github {% endif %}
+
+    </div>
+  </div>
+</div>
+
+<blockquote>
+  <p>
+ I am a Research Scientist working at the Appled Machine Learning department at Facebook . I have been working in different sub-disciplines of Machine Translation since 2006.  My interests lie at the intersection of Language Technologies, Statistics and Machine Learning. I love learning new languages.</p>
+</blockquote>
+
+<h4>News</h4>
+<div class= "row">
+<div class="col-sm-12">
+
+<ul class="list-group">
+{% for item in site.data.news  limit: 8 %}
+   <li class="list-group-item"><span class="badge" >{{item.date | date: "%-d %b %y"}}</span><span>{{ item.text }}</span></li>
+{% endfor %}
+</ul>
+</div>
+{% if page.twitter.id %}<div class="col-sm-4" style="outline: 1px solid #5E472D;">
+  <a class="twitter-timeline" width="300" data-theme="light"
+  data-link-color="#5E472D"
+  height="500" href="https://twitter.com/{{ page.twitter.id }}" data-widget-id="{{ page.twitter.widget }}">Tweets by @{{ page.twitter.id }}</a>
+</div>{% endif %}
+</div>
+
+<h4>Selected Papers</h4>
+
+{%assign papers= site.data.papers | sort: "year" | reverse  %}
+{% for post in papers %}
+  {% if post.selected %}
+    {% include paper.html paper=post %}
+  {% endif %}
+{% endfor %}

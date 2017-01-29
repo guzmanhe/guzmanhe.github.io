@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="citation_title" content="The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+" >
+    
+    
+    <meta name="citation_author" content="Francisco Guzmán" >
+    
+    <meta name="citation_publication_date" content="2011">
+    <meta name="citation_journal_title" content="">
+    
+    <meta name="citation_pdf_url" content="/papers/Thesis2011-Guzman.pdf">
+
+    <title>The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+</title>
+
+    <link href="http://0.0.0.0:4000/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="http://0.0.0.0:4000/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://0.0.0.0:4000/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://0.0.0.0:4000/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <br/><br/>
+<img src="http://0.0.0.0:4000/img/nav/paco2.jpg" class="img-responsive" alt="paco2"/>
+<ul class="nav navbar-inverse">
+  <li>
+    <a href="http://0.0.0.0:4000/index.html">Home</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/papers.html">Papers &amp; Talks</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/mentoring.html">Mentoring</a>
+  </li>
+  <!-- <li>
+    <a href=".html">Collaborators</a>
+  </li>-->
+  <li>
+    <a href="http://0.0.0.0:4000/cv.html">CV</a>
+  </li>
+</ul>
+<!-- <img src="http://0.0.0.0:4000/img/nav/qcri.jpg" class="img-responsive" alt="qcri"/> -->
+
+        </div>
+        <div class="col-sm-10">
+          <div class="page-header">
+      <h3>The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+ </h3>
+      <h4>Francisco Guzmán </h4>
+</div>
+<div class="media">	  
+	Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be    controlled by modifying word alignment’s characteristics. In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited. During the development of this dissertation we discovered how different characteristics of the alignment impact Machine Translation. We observed that while good quality alignments yield good phrase-pairs, the consolidation of a translation model is dependent on the alignment structure, not quality. Human-alignments are more dense than the computer generated counterparts, which trend to be more sparse and precision-oriented. Trying to emulate human-like alignment structure resulted in poorer systems, because the resulting translation models trend to be more compact and lack translation options. On the other hand, more translation options, even if they are noisier, help to improve the quality of the translation. This is due to the fact that translation does not rely only on the translation model, but also other factors that help to discriminate the noise from bad translations (e.g. the language model). Lastly, when we provide the decoder with features that help it to make more `informed decisions'' we observe a clear improvement in translation quality. This was specially true for the discriminative alignments which inherently leave more unaligned words. The result is more evident in low-resource settings where having larger translation lexicons represent more translation options. Using simple features to help the decoder discriminate translation hypotheses, clearly showed consistent improvements.
+
+</div>
+<div   class="media" >
+  <a class="pull-left thumbnail"  href="/papers/Thesis2011-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/Thesis2011-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+      <strong><a href="/papers/Thesis2011-Guzman.html">The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+</a></strong><br/>
+    Francisco Guzmán.
+    
+    2011.<br/>
+    
+     <a href="/papers/Thesis2011-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractThesis2011-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractThesis2011-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+</h4>
+            </div>
+            <div class="modal-body">
+              Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be    controlled by modifying word alignment’s characteristics. In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited. During the development of this dissertation we discovered how different characteristics of the alignment impact Machine Translation. We observed that while good quality alignments yield good phrase-pairs, the consolidation of a translation model is dependent on the alignment structure, not quality. Human-alignments are more dense than the computer generated counterparts, which trend to be more sparse and precision-oriented. Trying to emulate human-like alignment structure resulted in poorer systems, because the resulting translation models trend to be more compact and lack translation options. On the other hand, more translation options, even if they are noisier, help to improve the quality of the translation. This is due to the fact that translation does not rely only on the translation model, but also other factors that help to discriminate the noise from bad translations (e.g. the language model). Lastly, when we provide the decoder with features that help it to make more `informed decisions'' we observe a clear improvement in translation quality. This was specially true for the discriminative alignments which inherently leave more unaligned words. The result is more evident in low-resource settings where having larger translation lexicons represent more translation options. Using simple features to help the decoder discriminate translation hypotheses, clearly showed consistent improvements.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexThesis2011-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexThesis2011-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @phdthesis{guzman-thesis:2011,
+ abstract = {Statistical Word Alignments represent lexical word-to-word translations between source and target language sentences. They are considered the starting point for many state of the art Statistical Machine Translation (SMT) systems. In phrase-based systems, word alignments are loosely linked to the translation model. Despite the improvements reached in word alignment quality, there has been a modest improvement in the end-to-end translation. Until recently, little or no attention was paid to the structural characteristics of word-alignments (e.g. unaligned words) and their impact in further stages of the phrase-based SMT pipeline. A better understanding of the relationship between word alignment and the entailing processes will help to identify the variables across the pipeline that most influence translation performance and can be controlled by modifying word alignment’s characteristics.
+In this dissertation, we perform an in-depth study of the impact of word alignments at different stages of the phrase-based statistical machine translation pipeline, namely word alignment, phrase extraction, phrase scoring and decoding. Moreover, we establish a multivariate prediction model for different variables of word alignments, phrase tables and translation hypotheses. Based on those models, we identify the most important alignment variables and propose two alternatives to provide more control over alignment structure and thus improve SMT. Our results show that using alignment structure into decoding, via alignment gap features yields significant improvements, specially in situations where translation data is limited. During the development of this dissertation we discovered how different characteristics of the alignment impact Machine Translation. We observed that while good quality alignments yield good phrase-pairs, the consolidation of a translation model is dependent on the alignment structure, not quality. Human-alignments are more dense than the computer generated counterparts, which trend to be more sparse and precision-oriented. Trying to emulate human-like alignment structure resulted in poorer systems, because the resulting translation models trend to be more compact and lack translation options. On the other hand, more translation options, even if they are noisier, help to improve the quality of the translation. This is due to the fact that translation does not rely only on the translation model, but also other factors that help to discriminate the noise from bad translations (e.g. the language model). Lastly, when we provide the decoder with features that help it to make more `informed decisions'' we observe a clear improvement in translation quality. This was specially true for the discriminative alignments which inherently leave more unaligned words. The result is more evident in low-resource settings where having larger translation lexicons represent more translation options. Using simple features to help the decoder discriminate translation hypotheses, clearly showed consistent improvements.},
+ author = {Guzm{\'a}n, Francisco},
+ month = {December},
+ school = {Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Monterrey},
+ title = {The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation},
+ year = {2011}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/Thesis2011-Guzman.pptx" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+
+
+</div>
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated January 29, 2017.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

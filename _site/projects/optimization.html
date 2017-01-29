@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Machine Translation Optimization</title>
+
+    <link href="http://0.0.0.0:4000/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="http://0.0.0.0:4000/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://0.0.0.0:4000/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://0.0.0.0:4000/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <br/><br/>
+<img src="http://0.0.0.0:4000/img/nav/paco.jpg" class="img-responsive" alt="paco"/>
+<ul class="nav navbar-inverse">
+  <li>
+    <a href="http://0.0.0.0:4000/index.html">Home</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/papers.html">Papers &amp; Talks</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/mentoring.html">Mentoring</a>
+  </li>
+  <!-- <li>
+    <a href=".html">Collaborators</a>
+  </li>-->
+  <li>
+    <a href="http://0.0.0.0:4000/cv.html">CV</a>
+  </li>
+</ul>
+<!-- <img src="http://0.0.0.0:4000/img/nav/qcri.jpg" class="img-responsive" alt="qcri"/> -->
+
+        </div>
+        <div class="col-sm-10">
+          <div class="page-header">
+      <h3>Machine Translation Optimization </h3>
+</div>
+<div class="container">
+<div class="row">
+<h4> Description </h4>
+<div class="col-sm-8">
+In this project, we looked at different aspects of MT Parameter optimization. More specifically how the choice of an optimizer and optimization metric can influence the end-to-end performance.
+
+</div>
+</div>
+
+
+<div class="row">
+
+<h4> Related Publications </h4>
+<div class="container">
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+      <div   class="media" >
+  <a class="pull-left thumbnail"  href="/papers/CONLL2015-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/CONLL2015-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+      <strong><a href="/papers/CONLL2015-Guzman.html">Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length
+</a></strong><br/>
+    Francisco Guzmán, Preslav Nakov, Stephan Vogel.
+    
+         In 
+        
+          <a href="http://www.conll.org/2015">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the Nineteenth Conference on Computational Natural Language Learning (CoNLL)</i>, pages 62-72, 
+      
+    2015.<br/>
+    
+     <a href="/papers/CONLL2015-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractCONLL2015-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCONLL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length
+</h4>
+            </div>
+            <div class="modal-body">
+              We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets. Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexCONLL2015-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexCONLL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @InProceedings{guzman-nakov-vogel:2015:CoNLL, author    = {Guzm\'{a}n, Francisco  and  Nakov, Preslav  and  Vogel, Stephan}, title     = {Analyzing Optimization for Statistical Machine Translation: MERT Learns Verbosity, PRO Learns Length}, booktitle = {Proceedings of the Nineteenth Conference on Computational Natural Language Learning}, month     = {July}, year      = {2015}, address   = {Beijing, China}, publisher = {Association for Computational Linguistics}, pages     = {62--72}, url       = {http://www.aclweb.org/anthology/K15-1007}, abstract = {We study the impact of source length and verbosity of the tuning dataset on the performance of parameter optimizers such as MERT and PRO for statistical machine translation. In particular, we test whether the verbosity of the resulting translations can be modified by varying the length or the verbosity of the tuning sentences. We find that MERT learns the tuning set verbosity very well, while PRO is sensitive to both the verbosity and the length of the source sentences in the tuning set; yet, overall PRO learns best from high-verbosity tuning datasets.
+  Given these dependencies, and potentially some other such as amount of reordering, number of unknown words, syntactic complexity, and evaluation measure, to mention just a few, we argue for the need of controlled evaluation scenarios, so that the selection of tuning set and optimization strategy does not overshadow scientific advances in modeling or decoding. In the mean time, until we develop such controlled scenarios, we recommend using PRO with a large verbosity tuning set, which, in our experiments, yields highest BLEU across datasets and language pairs.}
+  }
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/CONLL2015-Guzman.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/ACL2013_Short-Nakov.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/ACL2013_Short-Nakov.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/ACL2013_Short-Nakov.html">A Tale about PRO and Monsters
+</a></strong><br/>
+    Preslav Nakov, Francisco Guzmán, and Stephan Vogel.
+    
+         In 
+        
+          <a href="http://acl2013.org/">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (ACL'13)</i>, pages 12-17, 
+      
+    2013.<br/>
+    
+     <a href="/papers/ACL2013_Short-Nakov.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractACL2013_Short-Nakov" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractACL2013_Short-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">A Tale about PRO and Monsters
+</h4>
+            </div>
+            <div class="modal-body">
+              While experimenting with tuning on long sentences, we made an unexpected discovery: that PRO falls victim to monsters -overly long negative examples with very low BLEU+1 scores, which are unsuitable for learning and can cause testing BLEU to drop by several points absolute. We propose several effective ways to address the problem, using length- and BLEU+1- based cut-offs, outlier filters, stochastic sampling, and random acceptance. The best of these fixes not only slay and protect against monsters, but also yield higher stability for PRO as well as improved test-time BLEU scores. Thus, we recommend them to anybody using PRO, monster-believer or not.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexACL2013_Short-Nakov" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexACL2013_Short-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">A Tale about PRO and Monsters
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{nakov-guzman-vogel:2013:Short,
+ abstract = {While experimenting with tuning on long sentences, we made an unexpected discovery: that PRO falls victim to monsters -overly long negative examples with very low BLEU+1 scores, which are unsuitable for learning and can cause testing BLEU to drop by several points absolute. We propose several effective ways to address the problem, using length- and BLEU+1- based cut-offs, outlier filters, stochastic sampling, and random acceptance. The best of these fixes not only slay and protect against monsters, but also yield higher stability for PRO as well as improved test-time BLEU scores. Thus, we recommend them to anybody using PRO, monster-believer or not.},
+ address = {Sofia, Bulgaria},
+ author = {Nakov, Preslav  and  Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+ booktitle = {Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics ({ACL'13})},
+ link = {http://www.aclweb.org/anthology/P13-2003},
+ month = {August},
+ pages = {12--17},
+ title = {A Tale about {PRO} and Monsters},
+ year = {2013}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/ACL2013-Nakov.pptx" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+
+  
+    
+    
+    
+      <div   class="media" >
+  <a class="pull-left thumbnail"  href="/papers/RANLP2013-Nakov.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/RANLP2013-Nakov.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+      <strong><a href="/papers/RANLP2013-Nakov.html">Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples
+</a></strong><br/>
+    Preslav Nakov, Fahad Al Obaidli, Francisco Guzmán, and Stephan Vogel.
+    
+         In 
+        
+          <a href="http://lml.bas.bg/ranlp2013">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the International Conference Recent Advances in Natural Language Processing (RANLP'13)</i>
+      
+    2013.<br/>
+    
+     <a href="/papers/RANLP2013-Nakov.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractRANLP2013-Nakov" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractRANLP2013-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples
+</h4>
+            </div>
+            <div class="modal-body">
+              Research on statistical machine translation has focused on particular translation directions, typically with English as the target language, e.g., from Arabic to English. When we reverse the translation direction, the multiple reference translations turn into multiple possible inputs, which offers both challenges and opportunities. We propose and evaluate several strategies for making use of these multiple inputs: (a) select one of the datasets, (b) select the best input for each sentence, and (c) synthesize an input for each sentence by fusing the available inputs. Surprisingly, we find out that it is best to tune on the hardest available input, not on the one that yields the highest BLEU score. This finding has implications on how to pick good translators and how to select useful data for parameter optimization in SMT.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexRANLP2013-Nakov" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexRANLP2013-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{nakov:2013:parameter,
+ abstract = {Research on statistical machine translation has focused on particular translation directions, typically with English as the target language, e.g., from Arabic to English. When we reverse the translation direction, the multiple reference translations turn into multiple possible inputs, which offers both challenges and opportunities. We propose and evaluate several strategies for making use of these multiple inputs: (a) select one of the datasets, (b) select the best input for each sentence, and (c) synthesize an input for each sentence by fusing the available inputs. Surprisingly, we find out that it is best to tune on the hardest available input, not on the one that yields the highest BLEU score. This finding has implications on how to pick good translators and how to select useful data for parameter optimization in SMT.},
+ author = {Nakov, Preslav and Al Obaidli, Fahad and Guzm{\'a}n, Francisco and Vogel, Stephan},
+ booktitle = {Proceedings of the International Conference Recent Advances in Natural Language Processing ({RANLP}'13)},
+ month = {September},
+ title = {Parameter Optimization for Statistical Machine Translation: It Pays to Learn from Hard Examples},
+ year = {2013}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/RANLP2013-Nakov.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+      <div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/COLING2012-Nakov.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/COLING2012-Nakov.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/COLING2012-Nakov.html">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</a></strong><br/>
+    Preslav Nakov, Francisco Guzmán, and Stephan Vogel.
+    
+         In 
+        
+          <a href="http://aclweb.org/portal/content/24th-international-conference-computational-linguistics">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)</i>, pages 1979–1994, 
+      
+    2012.<br/>
+    
+     <a href="/papers/COLING2012-Nakov.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractCOLING2012-Nakov" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCOLING2012-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</h4>
+            </div>
+            <div class="modal-body">
+              We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexCOLING2012-Nakov" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexCOLING2012-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{nakov-guzman-vogel:2012:PAPERS,
+  author    = {Nakov, Preslav  and  Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+  title     = {Optimizing for Sentence-Level {BLEU}+1 Yields Short Translations},
+  booktitle = {Proceedings of the 24rd International Conference on Computational Linguistics (COLING) 2012 },
+  month     = {December},
+  year      = {2012},
+  address   = {Mumbai, India},
+  publisher = {The {COLING} 2012 Organizing Committee},
+  pages     = {1979--1994},
+  url       = {http://www.aclweb.org/anthology/C12-1121},
+  abstract = {We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).}
+    }
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/COLING2012-Nakov.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+     
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+</div></div>
+
+</div>
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated January 29, 2017.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>  fork from
+        <a href="https://github.com/alopez/alopez.github.com">Adam Lopez's site</a>.<br/>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

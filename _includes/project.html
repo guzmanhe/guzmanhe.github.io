@@ -1,0 +1,55 @@
+<div class="page-header">
+      <h3>{{ include.project.title }} </h3>
+</div>
+<div class="container">
+<div class="row">
+<h4> Description </h4>
+<div class="col-sm-8">
+{{ include.project.description }}
+</div>
+</div>
+{% if include.project.demos %}
+<div class= "row">
+<h4> Demos </h4>
+<div class="col-sm-8">
+<ul class="list-group">
+{% for post in include.project.demos %}
+<li class="list-group-item">
+<a href="{{post.url}}">{{post.title}}</a><br/><span>{{ post.summary }}</span>
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endif %}
+{% if include.project.achievements %}
+<div class= "row">
+<h4> Achievements </h4>
+<div class="col-sm-8">
+<ul class="list-group">
+{% for post in include.project.achievements %}
+<li class="list-group-item">
+<span class="badge" >{{post.date}}</span><span>{{ post.summary }}</span>
+</li>
+{% endfor %}
+
+</ul>
+</div>
+</div>
+{% endif %}
+<div class="row">
+
+<h4> Related Publications </h4>
+<div class="container">
+{%assign papers= site.papers | sort: "year" | reverse  %}
+{% for post in papers %}
+  {% for paper in include.project.papers %}
+    {% if post.img == paper.id %}
+      {% include paper.html paper=post %}
+     {% endif %}
+    {% endfor %}
+{% endfor %}
+
+</div></div>
+
+</div>

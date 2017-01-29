@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="citation_title" content="Optimizing for Sentence-Level BLEU+1 Yields Short Translations" >
+    
+    
+    <meta name="citation_author" content="Preslav Nakov" >
+    
+    <meta name="citation_author" content=" Francisco Guzmán" >
+    
+    <meta name="citation_author" content=" and Stephan Vogel" >
+    
+    <meta name="citation_publication_date" content="2012">
+    <meta name="citation_journal_title" content="Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)">
+    
+    
+    <meta name="citation_firstpage" content="1979–1994">
+    <meta name="citation_lastpage" content="1979–1994">
+    
+    <meta name="citation_pdf_url" content="/papers/COLING2012-Nakov.pdf">
+
+    <title>Optimizing for Sentence-Level BLEU+1 Yields Short Translations</title>
+
+    <link href="http://0.0.0.0:4000/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="http://0.0.0.0:4000/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://0.0.0.0:4000/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://0.0.0.0:4000/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <br/><br/>
+<img src="http://0.0.0.0:4000/img/nav/paco2.jpg" class="img-responsive" alt="paco2"/>
+<ul class="nav navbar-inverse">
+  <li>
+    <a href="http://0.0.0.0:4000/index.html">Home</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/papers.html">Papers &amp; Talks</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/mentoring.html">Mentoring</a>
+  </li>
+  <!-- <li>
+    <a href=".html">Collaborators</a>
+  </li>-->
+  <li>
+    <a href="http://0.0.0.0:4000/cv.html">CV</a>
+  </li>
+</ul>
+<!-- <img src="http://0.0.0.0:4000/img/nav/qcri.jpg" class="img-responsive" alt="qcri"/> -->
+
+        </div>
+        <div class="col-sm-10">
+          <div class="page-header">
+      <h3>Optimizing for Sentence-Level BLEU+1 Yields Short Translations </h3>
+      <h4>Preslav Nakov, Francisco Guzmán, and Stephan Vogel </h4>
+</div>
+<div class="media">	  
+	We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).
+
+</div>
+<div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/COLING2012-Nakov.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/COLING2012-Nakov.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/COLING2012-Nakov.html">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</a></strong><br/>
+    Preslav Nakov, Francisco Guzmán, and Stephan Vogel.
+    
+         In 
+        
+          <a href="http://aclweb.org/portal/content/24th-international-conference-computational-linguistics">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 24rd International Conference on Computational Linguistics (COLING 2012)</i>, pages 1979–1994, 
+      
+    2012.<br/>
+    
+     <a href="/papers/COLING2012-Nakov.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractCOLING2012-Nakov" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractCOLING2012-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</h4>
+            </div>
+            <div class="modal-body">
+              We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexCOLING2012-Nakov" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexCOLING2012-Nakov" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Optimizing for Sentence-Level BLEU+1 Yields Short Translations</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @inproceedings{nakov-guzman-vogel:2012:PAPERS,
+  author    = {Nakov, Preslav  and  Guzm{\'a}n, Francisco  and  Vogel, Stephan},
+  title     = {Optimizing for Sentence-Level {BLEU}+1 Yields Short Translations},
+  booktitle = {Proceedings of the 24rd International Conference on Computational Linguistics (COLING) 2012 },
+  month     = {December},
+  year      = {2012},
+  address   = {Mumbai, India},
+  publisher = {The {COLING} 2012 Organizing Committee},
+  pages     = {1979--1994},
+  url       = {http://www.aclweb.org/anthology/C12-1121},
+  abstract = {We study a problem with pairwise ranking optimization (PRO): that it tends to yield too short translations. We find that this is partially due to the inadequate smoothing in PRO’s BLEU+1, which boosts the precision component of BLEU but leaves the brevity penalty unchanged, thus destroying the balance between the two, compared to BLEU. It is also partially due to PRO optimizing for a sentence-level score without a global view on the overall length, which introducing a bias towards short translations; we show that letting PRO optimize a corpus-level BLEU yields a perfect length. Finally, we find some residual bias due to the interaction of PRO with BLEU+1: such a bias does not exist for a version of MIRA with sentence-level BLEU+1. We propose several ways to fix the length problem of PRO, including smoothing the brevity penalty, scaling the effective reference length, grounding the precision component, and unclipping the brevity penalty, which yield sizable improvements in test BLEU on two Arabic-English datasets: IWSLT (+0.65) and NIST (+0.37).}
+    }
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/COLING2012-Nakov.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+
+
+</div>
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated January 29, 2017.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

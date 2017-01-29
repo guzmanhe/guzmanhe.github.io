@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="citation_title" content="Pairwise Neural Machine Translation Evaluation
+" >
+    
+    
+    <meta name="citation_author" content="Francisco Guzmán" >
+    
+    <meta name="citation_author" content=" Shafiq Joty" >
+    
+    <meta name="citation_author" content=" Lluís Màrquez" >
+    
+    <meta name="citation_author" content=" and Preslav Nakov" >
+    
+    <meta name="citation_publication_date" content="2015">
+    <meta name="citation_journal_title" content="Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian Federation of Natural Language Processing
+">
+    
+    
+    <meta name="citation_firstpage" content="805">
+    <meta name="citation_lastpage" content="814">
+    
+    <meta name="citation_pdf_url" content="/papers/ACL2015-Guzman.pdf">
+
+    <title>Pairwise Neural Machine Translation Evaluation
+</title>
+
+    <link href="http://0.0.0.0:4000/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="http://0.0.0.0:4000/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://0.0.0.0:4000/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61784189-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- MathJax
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> -->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://0.0.0.0:4000/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <br/><br/>
+<img src="http://0.0.0.0:4000/img/nav/paco2.jpg" class="img-responsive" alt="paco2"/>
+<ul class="nav navbar-inverse">
+  <li>
+    <a href="http://0.0.0.0:4000/index.html">Home</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/papers.html">Papers &amp; Talks</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/projects.html">Projects</a>
+  </li>
+  <li>
+    <a href="http://0.0.0.0:4000/mentoring.html">Mentoring</a>
+  </li>
+  <!-- <li>
+    <a href=".html">Collaborators</a>
+  </li>-->
+  <li>
+    <a href="http://0.0.0.0:4000/cv.html">CV</a>
+  </li>
+</ul>
+<!-- <img src="http://0.0.0.0:4000/img/nav/qcri.jpg" class="img-responsive" alt="qcri"/> -->
+
+        </div>
+        <div class="col-sm-10">
+          <div class="page-header">
+      <h3>Pairwise Neural Machine Translation Evaluation
+ </h3>
+      <h4>Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov </h4>
+</div>
+<div class="media">	  
+	We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
+
+</div>
+<div   class="media my-highlight" >
+  <a class="pull-left thumbnail"  href="/papers/ACL2015-Guzman.pdf" >
+    
+    <img src="http://0.0.0.0:4000/img/paper/ACL2015-Guzman.jpg" alt=""/>
+    
+  </a>
+  <div class="media-body"  >
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>   <strong><a href="/papers/ACL2015-Guzman.html">Pairwise Neural Machine Translation Evaluation
+</a></strong><br/>
+    Francisco Guzmán, Shafiq Joty, Lluís Màrquez, and Preslav Nakov.
+    
+         In 
+        
+          <a href="http://acl2015.org">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        
+          <i>Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian Federation of Natural Language Processing
+</i>, pages 805-814, 
+      
+    2015.<br/>
+    
+     <a href="/papers/ACL2015-Guzman.pdf" class="label label-success">PDF</a>
+    
+    
+      <a data-toggle="modal" href="#abstractACL2015-Guzman" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstractACL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Pairwise Neural Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.
+
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+      <a data-toggle="modal" href="#bibtexACL2015-Guzman" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtexACL2015-Guzman" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Pairwise Neural Machine Translation Evaluation
+</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                @InProceedings{guzman2015-ACL, author    = {Guzm\'{a}n, Francisco  and  Joty, Shafiq  and  M\`{a}rquez, Llu\'{i}s  and  Nakov, Preslav }, title     = {Pairwise Neural Machine Translation Evaluation},
+  booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and The 7th International Joint Conference of the Asian
+            Federation of Natural Language Processing ({ACL}'15)},
+  month     = {July},
+  year      = {2015},
+  address   = {Beijing, China},
+  publisher = {Association for Computational Linguistics},
+  pages     = {805--814},
+  url       = {http://www.aclweb.org/anthology/P15-1078},
+  Abstract = {We present a novel framework for machine translation evaluation using neural networks in a pairwise setting, where the goal is to select the better translation from a pair of hypotheses, given the reference translation. In this framework, lexical, syntactic and semantic information from the reference and the two hypotheses is compacted into relatively small distributed vector representations, and fed into a multi-layer neural network that models the interaction between each of the hypotheses and the reference, as well as between the two hypotheses. These compact representations are in turn based on word and sentence embeddings, which are learned using neural networks. The framework is flexible, allows for efficient learning and classification, and yields correlation with humans that rivals the state of the art.}
+}
+
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    
+    
+    
+      <a href="http://0.0.0.0:4000//media/ACL2015-Guzman.pdf" class="label label-info">Slides</a>
+    
+    
+    
+    
+  </div>
+</div>
+
+
+
+</div>
+        </div>
+        <div class="col-sm-15">
+
+
+        </div>
+      </div>
+      <footer class="text-center text-muted">
+        <hr/>
+        Last updated January 29, 2017.<br/>
+        Created with
+        <a href="http://git-scm.com/">git</a>,
+        <a href="http://jekyllrb.com">jekyll</a>,
+        <a href="http://getbootstrap.com/">bootstrap</a>,
+        and <a href="http://www.sublimetext.com/">sublime text</a>.<br/>
+        Website template available at <a href="https://github.com/guzmanhe/guzmanhe.github.io"> github </a>
+        <br/><br/>
+      </footer>
+    </div>
+  </body>
+</html>

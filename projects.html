@@ -1,0 +1,23 @@
+---
+layout: default
+title: Francisco Guzman | Papers &amp; Talks
+picture: paco2
+---
+<div class="page-header">
+  <h3>Projects</h3>
+<!-- <blockquote><i>I would have written a shorter letter, but I did not have the time.<br/>&mdash;Blaise Pascal</i></blockquote>
+</div> -->
+
+</div>
+<div class="col-sm-10">
+<ul  class="list-group">
+{% for post in site.projects %}
+<li class="list-group-item">
+  <h4> <a href="{{post.url}}">{{post.title}}</a> </h4>
+      {{ post.description }}
+{% endfor %}
+</li>
+
+
+<ul>
+</div>

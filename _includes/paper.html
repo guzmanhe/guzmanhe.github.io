@@ -1,0 +1,115 @@
+<div  {% if include.paper.selected %} class="media my-highlight" {% else %} class="media" {% endif %}>
+  <a class="pull-left thumbnail" {% if include.paper.doc-url %} href="{{ include.paper.doc-url }}" {% endif %}>
+    {% if include.paper.img %}
+    <img src="{{site.deploy}}/img/paper/{{ include.paper.img }}.jpg" alt=""/>
+    {% else %}
+    <img src="{{site.deploy}}/img/paper/inpress.jpg" alt=""/>
+    {% endif %}
+  </a>
+  <div class="media-body"  >
+    {% if include.paper.selected %}<span class="glyphicon glyphicon-star" aria-hidden="true"></span> {% endif %}  <strong><a href="/papers/{{include.paper.id}}.html">{{ include.paper.title }}</a></strong><br/>
+    {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}
+    {% case include.paper.paper-type %}
+      {% when "inproceedings" %}
+        {% if include.paper.toappear %} To appear in {% else %} In {% endif %}
+        {% if include.paper.booktitle-url %}
+          <a href="{{ include.paper.booktitle-url}}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{include.paper.booktitle}}</i>{% if include.paper.pages %}, pages {{ include.paper.pages }}, {% endif %}
+      {% when "incollection" %}
+        In
+        {% if include.paper.booktitle-url %}
+          <a href="{{ include.paper.booktitle-url }}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{ include.paper.booktitle}}</i>,
+        {% if include.paper.pages %}pages {{ include.paper.pages }}.{% endif %}
+        {% if include.paper.editor %} {{include.paper.editor}} (Eds).{% endif %}
+        {% if include.paper.publisher %} {{include.paper.publisher}}.{% endif %}
+      {% when "article" %}
+        In
+        {% if include.paper.journal-url %}
+          <a href="{{ include.paper.journal-url }}">
+            <span class="glyphicon glyphicon-globe"></span>
+          </a>
+        {% endif %}
+          <i>{{ include.paper.journal }}</i>
+            {% if include.paper.volume %},{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{ include.paper.number }}){% endif %}
+            {% if include.paper.article%}: Article {{ include.paper.article}},{% endif %}
+            {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}
+      {% when "dissertation" %}
+        Dissertation, {{ include.paper.institution }}.
+    {% endcase %}
+    {{ include.paper.year }}.<br/>
+    {% if include.paper.doc-url %}
+     <a href="{{ include.paper.doc-url }}" class="label label-success">PDF</a>
+    {% endif %}
+    {% if include.paper.abstract %}
+      <a data-toggle="modal" href="#abstract{{ include.paper.id }}" class="label label-default">Abstract</a>
+      <!-- Modal -->
+      <div class="modal fade" id="abstract{{ include.paper.id }}" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">{{ include.paper.title }}</h4>
+            </div>
+            <div class="modal-body">
+              {{ include.paper.abstract }}
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    {% endif %}
+    {% if include.paper.bibtex %}
+      <a data-toggle="modal" href="#bibtex{{ include.paper.id }}" class="label label-danger">BibTex</a>
+      <!-- Modal -->
+      <div class="modal fade" id="bibtex{{ include.paper.id }}" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">{{ include.paper.title }}</h4>
+            </div>
+            <div class="modal-body">
+              <code style="white-space: pre-wrap; align: left">
+                {{ include.paper.bibtex }}
+              </code>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    {% endif %}
+    {% if include.paper.errata %}
+      <!-- Modal -->
+      <div class="modal fade" id="errata{{ include.paper.id }}" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Errata | {{ include.paper.title }}</h4>
+            </div>
+            <div class="modal-body">
+              {{ include.paper.errata }}
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+       <a data-toggle="modal" href="#errata{{ include.paper.id }}" class="label label-default">
+         Errata
+      </a>&nbsp;
+    {% endif %}
+    {% if include.paper.slides %}
+      <a href="{{site.deploy}}/{{ include.paper.slides }}" class="label label-info">Slides</a>
+    {% endif %}
+    {% if include.paper.latex %}
+      <a href="{{ include.paper.latex }}" class="label label-danger">\( \LaTeX \)</a>
+    {% endif %}
+    {% if include.paper.code %}
+      <a href="{{ include.paper.code }}" class="label label-success">Code</a>
+    {% endif %}
+    {% if include.paper.software %}
+      <a href="{{ include.paper.software }}" class="label label-warning">Software/Code</a>
+    {% endif %}
+  </div>
+</div>

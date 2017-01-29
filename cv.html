@@ -1,0 +1,144 @@
+---
+layout: clean
+title: Francisco Javier Guzmán Herrera | CV
+before-pubs:
+  -
+    heading: Education
+    items:
+      -
+        title: Ph.D
+        year: 2011
+        detail: Instituto Tecnológico y de Estudios Superiores de Monterrey. Advisor&#58; Leonardo Garrido. Co-Advisor&#58; Stephan Vogel. Dissertation&#58; <i>The Impact of Statistical Word Alignment Quality and Structure in Phrase Based Statistical Machine Translation</i>
+      -
+        title: M.S. (Double degree)
+        year: 2004
+        detail: EPF - École d'Ingénieurs. <i> Systèmes et Réseaux Informatiques</i>. With award <i> Mention spécial du jury</o> for outstanding performance in double degree program
+      -
+        title: B.S (Double degree)
+        year: 2004
+        detail: Instituto Tecnológico y de Estudios Superiores de Monterrey. <i> Physics Engineering</i>. With Honors. General Electric Foundation Scholarship
+  -
+    heading: Appointments
+    items:
+      -
+        title: Research Scientist
+        year: 2016 &ndash; present
+        detai: Facebook
+      -
+        title: Scientist
+        year: 2012 &ndash; 2016
+        detail: Qatar Computing Research Institute
+      -
+        title: Postdoctoral Researcher
+        year: 2012 &ndash; 2012
+        detail: Qatar Computing Research Institute
+      -
+        title: Visiting Scholar
+        year: 2008 &ndash; 2009
+        detail: Carnegie Mellon University
+
+after-pubs:
+
+
+
+
+  -
+    heading: Awards
+    items:
+      -
+        title: QSTP Accelerator program
+        year: 2016
+        detail: Our proposal "Faham LT" for customized translation for Arabic and English, got granted $100K USD in accelerator funding to run from February to May 2016.
+      -
+        title: Best in show award
+        year: 2014
+        detail: We won the "Best in show" award for our Speech-to-Speech Translation demo at the BBC NewsHack III Hackathon in London, UK
+
+      - title: Best metric in competition
+        year: 2014
+        detail: Our Machine Translation evaluation metric <i>discoTK</i> won the first place in the WMT2014 Metrics task
+      - title: Best system for Arabic English
+        year: 2013
+        detail: Our Arabic-English and English-Arabic systems won the first place at IWSLT2013 translation tasks according to official metrics
+      - title: Best unconstrained system Spanish-English
+        year: 2012
+        detail: Our Spanish-English system was the best performing  unconstraind system according to human evaluation metrics at WMT 2012
+      -
+        title: Best poster award
+        year: 2007
+        detail: For CiCLing paper <i>Using Translation Paraphrases from Trilingual Corpora to Improve Phrase-Based Statistical Machine Translation&#58; A Preliminary Report</i> with Leonardo Garrido
+
+  -
+    heading: Professional Service
+    items:
+
+
+      -
+        title: Proposal Evaluator
+        detail: Challenge 22, Supreme Committee for Delivery &amp; Legacy (SC), 2015
+      -
+        title: Local Organizer
+        detail: EMNLP 2014
+      -
+        title: Student Scholarship Chair
+        detail: EMNLP 2015
+      -
+        title: Program Committee
+        detail: WMT 2015/2014, IWLSLT 2015, DiscoMT 2015, AICCSA 2014, LT4CloseLang 2014
+      -
+        title: Reviewer
+        detail: Journal of Artificial Intelligence Research, Computer Speech and Language
+      -
+        title: Reviewer
+        detail: NAACL 2016, SemEval 2015
+      -
+        title: Subreviewer
+        detail: COLING, CiCling
+
+  -
+    heading: Grants
+    items:
+      -
+        title: Conference on Empirical Methods in Natural Language Processing
+        year:  2014
+        detail: With Kemal Oflazer. Conference & Workshop Sponsorship Program (CWSP), Qatar National Research Fund, USD 70K
+
+  -
+    heading: Student Committees
+    items:
+      -
+        title: Alaa Khader
+        detail: Advisor, CMUQ, 2016. B.S. awarded 2016
+      -
+        title: Roberto Aceves
+        detail: Dissertation committee, ITESM, 2011. M.S. awarded 2011
+
+
+  -
+    heading: Patents
+    items:
+      -
+        title: PCT/ EP2013/050521. Dynamically adapting Machine Translation
+        detail: US 14/760,436 (pending). Describes a system in which models used for translation, as well as their optimized parameters are changed dynamically in function of the input text
+  -
+    heading: Engineering Positions
+    items:
+      -
+        title: Software Engineer
+        year: 2005-2006
+        detail: Neoris, Mexico
+---
+<div class="page-header">
+  <h3>Francisco Guzman</h3>
+</div>
+
+{% include cv-list.html categories=page.before-pubs %}
+
+<h4>Publications</h4>
+{% include paper-list.html venue='book' heading='Books and Book Chapters' %}
+{% include paper-list.html venue='conference' heading='Conferences and Transactions' %}
+{% include paper-list.html venue='workshop' heading='Workshops and Demonstrations' %}
+{% include paper-list.html venue='techreport' heading='Technical Reports' %}
+{% include cv-talks-list.html %}
+{% include cv-mentor-list.html %}
+{% include cv-list.html categories=page.after-pubs %}
