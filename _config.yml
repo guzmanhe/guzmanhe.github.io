@@ -9,13 +9,11 @@ collections:
     output: true
   papers:
     output: true
-  cv:
-    output: false
+#  cv:
+#    output: false
 
 deploy: "https://guzmanhe.github.io"
 
-#gems:
-#  - jekyll-pandoc
 env: github
 pandoc:
   format: html5
